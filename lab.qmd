@@ -132,11 +132,11 @@ A QGIS plugin bringing the iLAND individual-based forest landscape and disturban
 [📦]{.card-icon}
 
 ### forestPulse
-An R package for forest disturbance and recovery analysis from satellite time series — preprocessing, change detection, and visualization. Currently in development; the repository goes public at the first tagged release.
+An R package for analysing forest structure and disturbance from field plots and drone or satellite imagery, and for assembling the climate, landscape, and tree-initialisation inputs that drive the iLand model. Released under MIT with a citable DOI.
 
-[Documentation](tools.qmd#forestpulse) · [Lab GitHub](https://github.com/thecedarlab)
+[Documentation](tools.qmd#forestpulse) · [Source](https://github.com/paudelsushil/forestPulse)
 
-[R Package]{.card-tag} [In Development]{.card-tag}
+[R Package]{.card-tag} [R]{.card-tag} [Released]{.card-tag}
 :::
 
 :::
@@ -191,9 +191,9 @@ Multi-sensor habitat characterization across scales, fusing optical, radar, and 
 [🐙]{.card-icon}
 
 ### GitHub
-Source code, releases, and issue trackers for all lab software.
+The lab organization, plus the repositories where the tools themselves are developed.
 
-[github.com/thecedarlab](https://github.com/thecedarlab)
+[The CEDAR Lab](https://github.com/thecedarlab) · [Tool repositories](https://github.com/paudelsushil?tab=repositories)
 
 [Open Source]{.card-tag}
 :::

@@ -82,6 +82,20 @@ Research outputs are packaged as tools people can actually run: QGIS plugins, R 
 ::: {.pub-list}
 
 ::: {.pub-item}
+[forestPulse: Analyse Forest Structure and Disturbance from Field and Remote Sensing Data]{.pub-title}
+
+::: {.pub-meta}
+Paudel, S. (2025). *Zenodo.* Version 0.3.0. R package, MIT licensed.
+:::
+
+::: {.pub-links}
+[DOI: 10.5281/zenodo.17887640](https://doi.org/10.5281/zenodo.17887640)
+[Code](https://github.com/paudelsushil/forestPulse)
+[Docs](tools.qmd#forestpulse)
+:::
+:::
+
+::: {.pub-item}
 [iLAND Workbench: QGIS-based iLAND Workbench for hassle-free installation and reproducible analysis workflows]{.pub-title}
 
 ::: {.pub-meta}
@@ -111,7 +125,7 @@ Peer-reviewed articles will be listed here as they appear. In the meantime, the 
 
 ## Data & Code Availability
 
-Analysis code and, where licensing permits, derived datasets accompanying this research are published under the [The CEDAR Lab GitHub organization](https://github.com/thecedarlab). Software releases are archived on Zenodo so they can be cited with a persistent DOI.
+Analysis code and, where licensing permits, derived datasets accompanying this research are published openly on [GitHub](https://github.com/paudelsushil?tab=repositories), alongside [The CEDAR Lab](lab.qmd) organization. Software releases are archived on Zenodo so they can be cited with a persistent DOI.
 
 ::: {.highlight-box}
 ### Interested in Collaboration?

@@ -71,50 +71,123 @@ The plugin ships as a small, runtime-free package. The native iLAND console runt
 ## forestPulse
 
 ::: {.highlight-box}
-### 📦 forestPulse — An R Package for Forest Change Analysis
+### 📦 forestPulse — An R Package for Forest Structure, Disturbance & iLand Inputs
 
-forestPulse provides streamlined workflows for analyzing forest disturbance and recovery using satellite remote sensing data. It simplifies complex geospatial operations into accessible R functions.
+forestPulse turns forest field plots and drone or satellite imagery into analysis-ready summaries, and assembles the spatial and tabular inputs needed to drive the [iLand](https://iland-model.org) forest landscape model. Current release **v0.3.0**, MIT licensed.
 
-**Status: in development.** The repository becomes public at the first tagged release — follow [The CEDAR Lab on GitHub](https://github.com/thecedarlab) to be notified.
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17887640.svg)](https://doi.org/10.5281/zenodo.17887640)
 
-[The CEDAR Lab on GitHub](https://github.com/thecedarlab){.cta-btn .cta-primary style="margin-top: 1rem; font-size: 0.9rem; padding: 0.5rem 1.2rem;"}
+[GitHub Repository](https://github.com/paudelsushil/forestPulse){.cta-btn .cta-primary style="margin-top: 1rem; font-size: 0.9rem; padding: 0.5rem 1.2rem;"}
+[Releases](https://github.com/paudelsushil/forestPulse/releases){.cta-btn .cta-secondary style="margin-top: 1rem; font-size: 0.9rem; padding: 0.5rem 1.2rem;"}
+[Report an Issue](https://github.com/paudelsushil/forestPulse/issues){.cta-btn .cta-secondary style="margin-top: 1rem; font-size: 0.9rem; padding: 0.5rem 1.2rem;"}
 :::
+
+Together with [iLAND Workbench](#iland-workbench), forestPulse completes the pipeline: it prepares the landscape, climate, and tree-initialisation inputs, and the plugin runs the simulation inside QGIS.
 
 ::: {.panel-tabset}
 
 ### Overview
 
-forestPulse is designed to make forest change analysis more accessible to ecologists and conservation practitioners. The package handles:
+The package covers two connected areas, aimed at researchers, ecologists, and forest managers moving from field plots and imagery through to process-based modeling.
 
-- Satellite image preprocessing and time series construction
-- Forest disturbance detection algorithms
-- Change magnitude and timing estimation
-- Visualization of forest dynamics
+**Field and remote-sensing analysis**
+
+- Index geotagged raster imagery into a spatial catalogue and match it to field plots
+- Compute canopy height models (CHM), classify canopy gaps, and derive per-plot gap geometry
+- Calculate 37 RGB-derived vegetation indices from drone orthomosaics
+- Locate individual trees from compass bearings and distance measurements
+- Summarise plot-level basal area, crown density, and species composition
+- Standardise messy species names and audit what changed
+
+**iLand model inputs**
+
+- Impute field plots to pixels with modified random-forest imputation to build wall-to-wall tree lists, flagging poorly matched pixels
+- Derive daily climate variables — vapour pressure deficit, radiation — from gridMET following the FAO-56 approach, and write a per-cluster SQLite climate database in iLand's exact format
+- Build the stand grid, resource-unit environment grid and file, and the tree-initialisation file, then cross-validate them — step by step or through a single `build_iland_landscape()` call
 
 ### Installation
 
-Once the first release is published, forestPulse will install straight from GitHub:
-
 ```r
-# install.packages("devtools")
-devtools::install_github("thecedarlab/forestPulse")
+# install.packages("remotes")
+remotes::install_github("paudelsushil/forestPulse")
 ```
 
-### Status
+Requires R 4.1.0 or newer. Some capabilities use optional packages declared in `Suggests`: install `RSQLite` for climate databases, `yaImpute` for plot-to-pixel imputation, and `future`/`future.apply` for parallel spatial sampling.
 
-forestPulse is under active development. The current state of the package:
+### Quick start
 
-| Area | Status |
-|------|--------|
-| Time series construction | In development |
-| Disturbance detection | In development |
-| Change magnitude & timing | Planned |
-| Visualization helpers | Planned |
-| Vignettes & reference docs | Planned |
+Field and remote-sensing analysis:
 
-The repository is published at the first tagged release. Watch the lab's GitHub organization to be notified when it lands.
+```r
+library(forestPulse)
 
-[Watch The CEDAR Lab on GitHub](https://github.com/thecedarlab){.cta-btn .cta-solid style="font-size:0.88rem; padding:0.45rem 1.1rem;"}
+# 1. Build a spatial catalogue of geotagged rasters and match it to field plots
+catalog      <- build_catalog(input = "path/to/imagery", output = "catalog.geojson")
+plots        <- sf::read_sf("plots.shp")
+plot_imagery <- match_imagery(catalog, plots)
+
+# 2. Canopy height model, then per-plot canopy gap metrics
+chm     <- compute_chm("dsm.tif", "dtm.tif", output = "chm.tif")
+metrics <- extract_plot_metrics(chm = chm, plots = plots,
+                                radius = 15.24, gap_threshold = 3)
+
+# 3. An RGB vegetation index and a plot-level basal-area summary
+vegetation_index("ExG", image_path = "orthomosaic.tif")
+calculate_basal_area(tree_table, summary = "plot")
+```
+
+Preparing inputs for the iLand model:
+
+```r
+# Daily climate from a gridMET extraction -> per-cluster SQLite climate database
+clim <- gridmet_preprocessing(
+  data        = gridmet_daily,   # one row per cluster-day
+  cluster_col = "cluster",
+  date_col    = "date",
+  temp_unit   = "K",
+  vpd_source  = "compute"        # derive VPD from temperature + humidity
+)
+write_iland_climate(clim, "database/climate.sqlite", split_col = "cluster")
+
+# Stand grid + wall-to-wall tree initialisation via plot-to-pixel imputation
+stand_grid <- create_stand_grid(stands, id_field = "stand_id",
+                                filename = "gis/stand_grid.asc")
+target     <- make_target_from_rasters(predictor_stack, stand_grid)
+pixel_plot <- impute_plots_to_pixels(reference, target, predictors, responses)
+build_iland_init(pixel_plot, tree_lists, out_path = "init/init_trees.txt")
+```
+
+### Function reference
+
+| Topic | Functions |
+|-------|-----------|
+| Raster catalogue | `build_catalog()`, `read_catalog()`, `query_catalog()`, `match_imagery()`, `footprint()` |
+| Canopy height & gaps | `compute_chm()`, `classify_gaps()`, `gap_metrics()`, `extract_plot_metrics()` |
+| Vegetation indices | `vegetation_index()` — 37 RGB indices |
+| Tree location | `locate_tree()` |
+| Basal area & summaries | `calculate_basal_area()`, `calculate_species_basal_area()`, `calculate_plot_species_basal_area()`, `calculate_plot_summary()` |
+| Crown density | `calculate_crownDensity()`, `show_calculation_details()`, `plot_summary()` |
+| Species standardisation | `clean_species_names()`, `get_species_mapping()`, `check_unmapped_species()`, `compare_species_changes()` |
+| Climate (iLand) | `gridmet_preprocessing()`, `calc_vpd()`, `calc_saturation_vapor_pressure()`, `convert_radiation()`, `write_iland_climate()` |
+| Landscape (iLand) | `create_stand_grid()`, `create_environment_grid()`, `create_environment_file()`, `build_iland_landscape()`, `validate_landscape()` |
+| Imputation & init | `impute_plots_to_pixels()`, `make_target_from_rasters()`, `flag_far_imputations()`, `build_iland_init()`, `create_init_file()` |
+
+Full documentation is available in the package help pages (`?forestPulse`) and the [repository README](https://github.com/paudelsushil/forestPulse#readme).
+
+### Citation
+
+```bibtex
+@software{paudel2025forestpulse,
+  author    = {Paudel, Sushil},
+  title     = {{forestPulse: Analyse Forest Structure and Disturbance
+                from Field and Remote Sensing Data}},
+  year      = {2025},
+  version   = {0.3.0},
+  publisher = {Zenodo},
+  doi       = {10.5281/zenodo.17887640},
+  url       = {https://doi.org/10.5281/zenodo.17887640}
+}
+```
 
 :::
 
@@ -139,9 +212,9 @@ Video tutorials on remote sensing, GIS, R programming, and geospatial AI methods
 [💻]{.card-icon}
 
 ### Code & Data
-Reproducible code and datasets accompanying publications and tutorials. All hosted on GitHub under The CEDAR Lab organization.
+Source code for both packages, plus reproducible code and datasets accompanying publications and tutorials.
 
-[Browse Repos](https://github.com/thecedarlab)
+[Browse Repositories](https://github.com/paudelsushil?tab=repositories)
 
 [Open Source]{.card-tag} [Reproducible]{.card-tag}
 :::
@@ -170,7 +243,7 @@ Tool releases, migration notes, and worked examples — by email once or twice a
 ```
 
 ::: {.subscribe-note}
-You can also [watch the repositories on GitHub](https://github.com/thecedarlab) for release notifications.
+You can also watch [iLAND Workbench](https://github.com/paudelsushil/iLAND-QGIS-plugin) and [forestPulse](https://github.com/paudelsushil/forestPulse) on GitHub for release notifications.
 :::
 
 :::

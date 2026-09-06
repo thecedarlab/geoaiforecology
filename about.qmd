@@ -24,7 +24,8 @@ I'm a researcher working at the intersection of geospatial artificial intelligen
 I founded **[The CEDAR Lab](lab.qmd)** (Computational Ecology, Data Analytics & Remote Sensing) to advance open, reproducible research in geospatial ecology, and I run the **GeoAI for Ecology** YouTube channel to make these methods accessible to a wider audience.
 
 ::: {.profile-links}
-[🐙 GitHub](https://github.com/thecedarlab)
+[🐙 GitHub](https://github.com/paudelsushil)
+[🏛️ The CEDAR Lab](lab.qmd)
 [🎥 YouTube](https://www.youtube.com/@geoai4ecology)
 [📡 Blog RSS](blog.xml)
 <!-- SETUP: uncomment and fill in once you have the links —
@@ -66,7 +67,7 @@ Making the iLAND simulation model usable from within QGIS, so that forest and di
 [📦]{.card-icon}
 
 ### Open R tooling
-Building forestPulse to turn multi-step satellite change-detection workflows into a handful of well-documented R functions.
+Building forestPulse to take forest field plots and drone imagery through to analysis-ready summaries and iLand model inputs.
 
 [forestPulse](tools.qmd#forestpulse)
 :::
@@ -116,7 +117,7 @@ I'm always open to collaborations, speaking invitations, and questions about the
 </form>
 ```
 
-Prefer somewhere else? You can also open an issue on [GitHub](https://github.com/thecedarlab) or leave a comment on the [YouTube channel](https://www.youtube.com/@geoai4ecology).
+Prefer somewhere else? For anything tool-specific, open an issue on [forestPulse](https://github.com/paudelsushil/forestPulse/issues) or [iLAND Workbench](https://github.com/paudelsushil/iLAND-QGIS-plugin/issues) — or leave a comment on the [YouTube channel](https://www.youtube.com/@geoai4ecology).
 
 ---
 
@@ -128,9 +129,9 @@ Prefer somewhere else? You can also open an issue on [GitHub](https://github.com
 [🐙]{.card-icon}
 
 ### GitHub
-Source code for The CEDAR Lab projects, plus the [iLAND Workbench plugin](https://github.com/paudelsushil/iLAND-QGIS-plugin) under my personal account.
+Source code for [forestPulse](https://github.com/paudelsushil/forestPulse) and [iLAND Workbench](https://github.com/paudelsushil/iLAND-QGIS-plugin), plus everything else I work on in the open.
 
-[github.com/thecedarlab](https://github.com/thecedarlab)
+[github.com/paudelsushil](https://github.com/paudelsushil)
 
 [Open Source]{.card-tag}
 :::

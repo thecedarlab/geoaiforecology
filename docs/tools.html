@@ -460,63 +460,147 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="forestpulse" class="level2">
 <h2 class="anchored" data-anchor-id="forestpulse">forestPulse</h2>
-<section id="forestpulse-an-r-package-for-forest-change-analysis" class="level3 highlight-box">
-<h3 class="anchored" data-anchor-id="forestpulse-an-r-package-for-forest-change-analysis">📦 forestPulse — An R Package for Forest Change Analysis</h3>
-<p>forestPulse provides streamlined workflows for analyzing forest disturbance and recovery using satellite remote sensing data. It simplifies complex geospatial operations into accessible R functions.</p>
-<p><strong>Status: in development.</strong> The repository becomes public at the first tagged release — follow <a href="https://github.com/thecedarlab">The CEDAR Lab on GitHub</a> to be notified.</p>
-<p><a href="https://github.com/thecedarlab" class="cta-btn cta-primary" style="margin-top: 1rem; font-size: 0.9rem; padding: 0.5rem 1.2rem;">The CEDAR Lab on GitHub</a></p>
+<section id="forestpulse-an-r-package-for-forest-structure-disturbance-iland-inputs" class="level3 highlight-box">
+<h3 class="anchored" data-anchor-id="forestpulse-an-r-package-for-forest-structure-disturbance-iland-inputs">📦 forestPulse — An R Package for Forest Structure, Disturbance &amp; iLand Inputs</h3>
+<p>forestPulse turns forest field plots and drone or satellite imagery into analysis-ready summaries, and assembles the spatial and tabular inputs needed to drive the <a href="https://iland-model.org">iLand</a> forest landscape model. Current release <strong>v0.3.0</strong>, MIT licensed.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://doi.org/10.5281/zenodo.17887640"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.17887640.svg" class="img-fluid figure-img"></a></p>
+<figcaption>DOI</figcaption>
+</figure>
+</div>
+<p><a href="https://github.com/paudelsushil/forestPulse" class="cta-btn cta-primary" style="margin-top: 1rem; font-size: 0.9rem; padding: 0.5rem 1.2rem;">GitHub Repository</a> <a href="https://github.com/paudelsushil/forestPulse/releases" class="cta-btn cta-secondary" style="margin-top: 1rem; font-size: 0.9rem; padding: 0.5rem 1.2rem;">Releases</a> <a href="https://github.com/paudelsushil/forestPulse/issues" class="cta-btn cta-secondary" style="margin-top: 1rem; font-size: 0.9rem; padding: 0.5rem 1.2rem;">Report an Issue</a></p>
 </section>
+<p>Together with <a href="#iland-workbench">iLAND Workbench</a>, forestPulse completes the pipeline: it prepares the landscape, climate, and tree-initialisation inputs, and the plugin runs the simulation inside QGIS.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true" href="">Overview</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false" href="">Installation</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-3" role="tab" aria-controls="tabset-2-3" aria-selected="false" href="">Status</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true" href="">Overview</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false" href="">Installation</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-3" role="tab" aria-controls="tabset-2-3" aria-selected="false" href="">Quick start</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-4" role="tab" aria-controls="tabset-2-4" aria-selected="false" href="">Function reference</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-5" role="tab" aria-controls="tabset-2-5" aria-selected="false" href="">Citation</a></li></ul>
 <div class="tab-content">
 <div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
-<p>forestPulse is designed to make forest change analysis more accessible to ecologists and conservation practitioners. The package handles:</p>
+<p>The package covers two connected areas, aimed at researchers, ecologists, and forest managers moving from field plots and imagery through to process-based modeling.</p>
+<p><strong>Field and remote-sensing analysis</strong></p>
 <ul>
-<li>Satellite image preprocessing and time series construction</li>
-<li>Forest disturbance detection algorithms</li>
-<li>Change magnitude and timing estimation</li>
-<li>Visualization of forest dynamics</li>
+<li>Index geotagged raster imagery into a spatial catalogue and match it to field plots</li>
+<li>Compute canopy height models (CHM), classify canopy gaps, and derive per-plot gap geometry</li>
+<li>Calculate 37 RGB-derived vegetation indices from drone orthomosaics</li>
+<li>Locate individual trees from compass bearings and distance measurements</li>
+<li>Summarise plot-level basal area, crown density, and species composition</li>
+<li>Standardise messy species names and audit what changed</li>
+</ul>
+<p><strong>iLand model inputs</strong></p>
+<ul>
+<li>Impute field plots to pixels with modified random-forest imputation to build wall-to-wall tree lists, flagging poorly matched pixels</li>
+<li>Derive daily climate variables — vapour pressure deficit, radiation — from gridMET following the FAO-56 approach, and write a per-cluster SQLite climate database in iLand’s exact format</li>
+<li>Build the stand grid, resource-unit environment grid and file, and the tree-initialisation file, then cross-validate them — step by step or through a single <code>build_iland_landscape()</code> call</li>
 </ul>
 </div>
 <div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
-<p>Once the first release is published, forestPulse will install straight from GitHub:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># install.packages("devtools")</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">"thecedarlab/forestPulse"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># install.packages("remotes")</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>remotes<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">"paudelsushil/forestPulse"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Requires R 4.1.0 or newer. Some capabilities use optional packages declared in <code>Suggests</code>: install <code>RSQLite</code> for climate databases, <code>yaImpute</code> for plot-to-pixel imputation, and <code>future</code>/<code>future.apply</code> for parallel spatial sampling.</p>
 </div>
 <div id="tabset-2-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-3-tab">
-<p>forestPulse is under active development. The current state of the package:</p>
+<p>Field and remote-sensing analysis:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(forestPulse)</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="co"># 1. Build a spatial catalogue of geotagged rasters and match it to field plots</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>catalog      <span class="ot">&lt;-</span> <span class="fu">build_catalog</span>(<span class="at">input =</span> <span class="st">"path/to/imagery"</span>, <span class="at">output =</span> <span class="st">"catalog.geojson"</span>)</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>plots        <span class="ot">&lt;-</span> sf<span class="sc">::</span><span class="fu">read_sf</span>(<span class="st">"plots.shp"</span>)</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>plot_imagery <span class="ot">&lt;-</span> <span class="fu">match_imagery</span>(catalog, plots)</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="co"># 2. Canopy height model, then per-plot canopy gap metrics</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>chm     <span class="ot">&lt;-</span> <span class="fu">compute_chm</span>(<span class="st">"dsm.tif"</span>, <span class="st">"dtm.tif"</span>, <span class="at">output =</span> <span class="st">"chm.tif"</span>)</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>metrics <span class="ot">&lt;-</span> <span class="fu">extract_plot_metrics</span>(<span class="at">chm =</span> chm, <span class="at">plots =</span> plots,</span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>                                <span class="at">radius =</span> <span class="fl">15.24</span>, <span class="at">gap_threshold =</span> <span class="dv">3</span>)</span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a><span class="co"># 3. An RGB vegetation index and a plot-level basal-area summary</span></span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a><span class="fu">vegetation_index</span>(<span class="st">"ExG"</span>, <span class="at">image_path =</span> <span class="st">"orthomosaic.tif"</span>)</span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a><span class="fu">calculate_basal_area</span>(tree_table, <span class="at">summary =</span> <span class="st">"plot"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Preparing inputs for the iLand model:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Daily climate from a gridMET extraction -&gt; per-cluster SQLite climate database</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>clim <span class="ot">&lt;-</span> <span class="fu">gridmet_preprocessing</span>(</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">data        =</span> gridmet_daily,   <span class="co"># one row per cluster-day</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">cluster_col =</span> <span class="st">"cluster"</span>,</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">date_col    =</span> <span class="st">"date"</span>,</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">temp_unit   =</span> <span class="st">"K"</span>,</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">vpd_source  =</span> <span class="st">"compute"</span>        <span class="co"># derive VPD from temperature + humidity</span></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a><span class="fu">write_iland_climate</span>(clim, <span class="st">"database/climate.sqlite"</span>, <span class="at">split_col =</span> <span class="st">"cluster"</span>)</span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Stand grid + wall-to-wall tree initialisation via plot-to-pixel imputation</span></span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>stand_grid <span class="ot">&lt;-</span> <span class="fu">create_stand_grid</span>(stands, <span class="at">id_field =</span> <span class="st">"stand_id"</span>,</span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>                                <span class="at">filename =</span> <span class="st">"gis/stand_grid.asc"</span>)</span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>target     <span class="ot">&lt;-</span> <span class="fu">make_target_from_rasters</span>(predictor_stack, stand_grid)</span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>pixel_plot <span class="ot">&lt;-</span> <span class="fu">impute_plots_to_pixels</span>(reference, target, predictors, responses)</span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a><span class="fu">build_iland_init</span>(pixel_plot, tree_lists, <span class="at">out_path =</span> <span class="st">"init/init_trees.txt"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div id="tabset-2-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-4-tab">
 <table class="caption-top table">
+<colgroup>
+<col style="width: 38%">
+<col style="width: 61%">
+</colgroup>
 <thead>
 <tr class="header">
-<th>Area</th>
-<th>Status</th>
+<th>Topic</th>
+<th>Functions</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Time series construction</td>
-<td>In development</td>
+<td>Raster catalogue</td>
+<td><code>build_catalog()</code>, <code>read_catalog()</code>, <code>query_catalog()</code>, <code>match_imagery()</code>, <code>footprint()</code></td>
 </tr>
 <tr class="even">
-<td>Disturbance detection</td>
-<td>In development</td>
+<td>Canopy height &amp; gaps</td>
+<td><code>compute_chm()</code>, <code>classify_gaps()</code>, <code>gap_metrics()</code>, <code>extract_plot_metrics()</code></td>
 </tr>
 <tr class="odd">
-<td>Change magnitude &amp; timing</td>
-<td>Planned</td>
+<td>Vegetation indices</td>
+<td><code>vegetation_index()</code> — 37 RGB indices</td>
 </tr>
 <tr class="even">
-<td>Visualization helpers</td>
-<td>Planned</td>
+<td>Tree location</td>
+<td><code>locate_tree()</code></td>
 </tr>
 <tr class="odd">
-<td>Vignettes &amp; reference docs</td>
-<td>Planned</td>
+<td>Basal area &amp; summaries</td>
+<td><code>calculate_basal_area()</code>, <code>calculate_species_basal_area()</code>, <code>calculate_plot_species_basal_area()</code>, <code>calculate_plot_summary()</code></td>
+</tr>
+<tr class="even">
+<td>Crown density</td>
+<td><code>calculate_crownDensity()</code>, <code>show_calculation_details()</code>, <code>plot_summary()</code></td>
+</tr>
+<tr class="odd">
+<td>Species standardisation</td>
+<td><code>clean_species_names()</code>, <code>get_species_mapping()</code>, <code>check_unmapped_species()</code>, <code>compare_species_changes()</code></td>
+</tr>
+<tr class="even">
+<td>Climate (iLand)</td>
+<td><code>gridmet_preprocessing()</code>, <code>calc_vpd()</code>, <code>calc_saturation_vapor_pressure()</code>, <code>convert_radiation()</code>, <code>write_iland_climate()</code></td>
+</tr>
+<tr class="odd">
+<td>Landscape (iLand)</td>
+<td><code>create_stand_grid()</code>, <code>create_environment_grid()</code>, <code>create_environment_file()</code>, <code>build_iland_landscape()</code>, <code>validate_landscape()</code></td>
+</tr>
+<tr class="even">
+<td>Imputation &amp; init</td>
+<td><code>impute_plots_to_pixels()</code>, <code>make_target_from_rasters()</code>, <code>flag_far_imputations()</code>, <code>build_iland_init()</code>, <code>create_init_file()</code></td>
 </tr>
 </tbody>
 </table>
-<p>The repository is published at the first tagged release. Watch the lab’s GitHub organization to be notified when it lands.</p>
-<p><a href="https://github.com/thecedarlab" class="cta-btn cta-solid" style="font-size:0.88rem; padding:0.45rem 1.1rem;">Watch The CEDAR Lab on GitHub</a></p>
+<p>Full documentation is available in the package help pages (<code>?forestPulse</code>) and the <a href="https://github.com/paudelsushil/forestPulse#readme">repository README</a>.</p>
+</div>
+<div id="tabset-2-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-5-tab">
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode bibtex code-with-copy"><code class="sourceCode bibtex"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co">@software{paudel2025forestpulse,</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="co">  author    = {Paudel, Sushil},</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="co">  title     = {{forestPulse: Analyse Forest Structure and Disturbance</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="co">                from Field and Remote Sensing Data}},</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="co">  year      = {2025},</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="co">  version   = {0.3.0},</span></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="co">  publisher = {Zenodo},</span></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="co">  doi       = {10.5281/zenodo.17887640},</span></span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a><span class="co">  url       = {https://doi.org/10.5281/zenodo.17887640}</span></span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a><span class="co">}</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </div>
 </div>
@@ -538,8 +622,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p><span class="card-icon">💻</span></p>
 <section id="code-data" class="level3">
 <h3 class="anchored" data-anchor-id="code-data">Code &amp; Data</h3>
-<p>Reproducible code and datasets accompanying publications and tutorials. All hosted on GitHub under The CEDAR Lab organization.</p>
-<p><a href="https://github.com/thecedarlab">Browse Repos</a></p>
+<p>Source code for both packages, plus reproducible code and datasets accompanying publications and tutorials.</p>
+<p><a href="https://github.com/paudelsushil?tab=repositories">Browse Repositories</a></p>
 <p><span class="card-tag">Open Source</span> <span class="card-tag">Reproducible</span></p>
 </section>
 </div>
@@ -554,7 +638,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <button type="submit">Subscribe</button>
 </form>
 <div class="subscribe-note">
-<p>You can also <a href="https://github.com/thecedarlab">watch the repositories on GitHub</a> for release notifications.</p>
+<p>You can also watch <a href="https://github.com/paudelsushil/iLAND-QGIS-plugin">iLAND Workbench</a> and <a href="https://github.com/paudelsushil/forestPulse">forestPulse</a> on GitHub for release notifications.</p>
 </div>
 </section>
 </section>

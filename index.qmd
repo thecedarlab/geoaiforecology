@@ -98,7 +98,7 @@ Quantifying forest carbon stocks and fluxes through integration of field measure
 
 ### Open Tools
 
-Building open-source software that makes geospatial ecology research more reproducible and accessible. Current projects include **forestPulse**, an R package for forest change analysis, and **iLAND Workbench**, a QGIS plugin for individual-based forest landscape and disturbance modeling with full data-preparation workflows, runtime management, and reproducible analysis pipelines.
+Building open-source software that makes geospatial ecology research more reproducible and accessible. Current projects include **forestPulse**, an R package taking forest field plots and drone or satellite imagery through to analysis-ready summaries and iLand model inputs, and **iLAND Workbench**, a QGIS plugin for individual-based forest landscape and disturbance modeling with full data-preparation workflows, runtime management, and reproducible analysis pipelines. Together they form a single pipeline from field data to simulation.
 
 :::
 
@@ -123,11 +123,11 @@ A dockable QGIS plugin that brings the iLAND individual-based forest landscape a
 [📦]{.card-icon}
 
 ### forestPulse
-An R package providing streamlined workflows for forest disturbance and recovery analysis from satellite time series — preprocessing, change detection, and visualization in a handful of functions.
+An R package that turns forest field plots and drone or satellite imagery into analysis-ready summaries — canopy structure, basal area, species composition — and assembles the inputs needed to drive the iLand model.
 
 [Read more →](tools.qmd#forestpulse)
 
-[R Package]{.card-tag} [Change Detection]{.card-tag}
+[R Package]{.card-tag} [Field & Imagery]{.card-tag} [Zenodo DOI]{.card-tag}
 :::
 
 :::

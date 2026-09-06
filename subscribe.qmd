@@ -73,9 +73,9 @@ Video tutorials on remote sensing, GIS, R, and geospatial AI. Subscribe there fo
 [🐙]{.card-icon}
 
 ### GitHub
-Watch The CEDAR Lab organization to get notified about new releases and repositories.
+Watch a repository to be notified about new releases.
 
-[github.com/thecedarlab](https://github.com/thecedarlab)
+[forestPulse](https://github.com/paudelsushil/forestPulse) · [iLAND Workbench](https://github.com/paudelsushil/iLAND-QGIS-plugin)
 
 [Releases]{.card-tag} [Code]{.card-tag}
 :::
