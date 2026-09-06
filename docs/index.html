@@ -6,6 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="Geospatial artificial intelligence, remote sensing, and open-source tools for understanding forest and landscape change.">
 
 <title>GeoAI for Ecology — Sushil Paudel – GeoAI for Ecology</title>
 <style>
@@ -37,16 +38,22 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
 <link href="./images/favicon.png" rel="icon" type="image/png">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b85bc7c33db8c58e0ec93c3465666fed.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-2382bb1fe48f5ea0d5b69f62ea651060.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-a4aa00f4e5e8fe4a57b5c4f5af245dcd.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-12c3949eb964a179efe6f4fea805f3af.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-a4aa00f4e5e8fe4a57b5c4f5af245dcd.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -74,12 +81,249 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-recent-posts .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-date','listing-title','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-recent-posts'] = new List('listing-recent-posts', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+<link rel="alternate" type="application/rss+xml" title="GeoAI for Ecology" href="https://geoaiforecology.com/blog.xml">
+<link rel="icon" type="image/svg+xml" href="./images/favicon.svg">
+<meta name="author" content="Sushil Paudel">
+<meta name="theme-color" content="#1a2f23">
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
+<meta property="og:title" content="GeoAI for Ecology — Sushil Paudel">
+<meta property="og:description" content="Geospatial artificial intelligence, remote sensing, and open-source tools for understanding forest and landscape change.">
+<meta property="og:image" content="https://geoaiforecology.com/images/og-image.png">
+<meta property="og:site_name" content="GeoAI for Ecology">
+<meta property="og:locale" content="en_US">
+<meta property="og:image:height" content="630">
+<meta property="og:image:width" content="1200">
+<meta name="twitter:title" content="GeoAI for Ecology — Sushil Paudel">
+<meta name="twitter:description" content="Geospatial artificial intelligence, remote sensing, and open-source tools for understanding forest and landscape change.">
+<meta name="twitter:image" content="https://geoaiforecology.com/images/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image-height" content="630">
+<meta name="twitter:image-width" content="1200">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -118,6 +362,10 @@ ul.task-list li input[type="checkbox"] {
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./subscribe.html"> 
+<span class="menu-text">Subscribe</span></a>
+  </li>  
   <li class="nav-item compact">
     <a class="nav-link" href="https://github.com/thecedarlab"> <i class="bi bi-github" role="img" aria-label="GitHub">
 </i> 
@@ -128,9 +376,15 @@ ul.task-list li input[type="checkbox"] {
 </i> 
 <span class="menu-text"></span></a>
   </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="./blog.xml"> <i class="bi bi-rss" role="img" aria-label="RSS feed">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -141,27 +395,18 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">GeoAI for Ecology</h1>
-</div>
+<main class="content column-page" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><h1 class="title display-7">GeoAI for Ecology</h1></header>
 
 
-
-<div class="quarto-title-meta column-page">
-
-    
-  
-    
-  </div>
-  
+<header id="title-block-header">
 
 
 </header>
 
 
+<!-- The hero banner below carries the page title, so suppress Quarto's
+     default title block on this page only. -->
+<style>#title-block-header { display: none; }</style>
 <div class="hero-banner">
 <div class="hero-badge">
 <p>🌲 CEDAR Lab · Computational Ecology, Data Analytics &amp; Remote Sensing</p>
@@ -172,7 +417,7 @@ ul.task-list li input[type="checkbox"] {
 <p>Bridging geospatial artificial intelligence and ecological science to understand, monitor, and protect forest landscapes.</p>
 </div>
 <div class="cta-group">
-<p><a href="./research.html" class="cta-btn cta-primary">Explore Research</a> <a href="./tools.html" class="cta-btn cta-secondary">Tools &amp; Packages</a> <a href="https://www.youtube.com/@geoai4ecology" class="cta-btn cta-secondary">YouTube Channel</a></p>
+<p><a href="./research.html" class="cta-btn cta-primary">Explore Research</a> <a href="./tools.html" class="cta-btn cta-secondary">Tools &amp; Packages</a> <a href="./subscribe.html" class="cta-btn cta-secondary">Subscribe</a></p>
 </div>
 </section>
 </div>
@@ -182,16 +427,28 @@ ul.task-list li input[type="checkbox"] {
 <p>I develop computational methods that combine machine learning, remote sensing, and spatial analysis to study how forests and landscapes change over time — and what that means for biodiversity, carbon storage, and ecosystem health.</p>
 <div class="card-grid">
 <div class="card-item">
-<p><span class="card-icon">🛰️</span> ### Remote Sensing &amp; GIS Leveraging satellite imagery, LiDAR, and geospatial tools to map and monitor forests at scale — from individual tree crowns to continental patterns.</p>
+<p><span class="card-icon">🛰️</span></p>
+<section id="remote-sensing-gis" class="level3">
+<h3 class="anchored" data-anchor-id="remote-sensing-gis">Remote Sensing &amp; GIS</h3>
+<p>Leveraging satellite imagery, LiDAR, and geospatial tools to map and monitor forests at scale — from individual tree crowns to continental patterns.</p>
 <p><span class="card-tag">Remote Sensing</span> <span class="card-tag">GIS</span></p>
+</section>
 </div>
 <div class="card-item">
-<p><span class="card-icon">🤖</span> ### GeoAI &amp; Machine Learning Applying deep learning, computer vision, and spatial statistics to extract ecological insights from complex geospatial datasets.</p>
+<p><span class="card-icon">🤖</span></p>
+<section id="geoai-machine-learning" class="level3">
+<h3 class="anchored" data-anchor-id="geoai-machine-learning">GeoAI &amp; Machine Learning</h3>
+<p>Applying deep learning, computer vision, and spatial statistics to extract ecological insights from complex geospatial datasets.</p>
 <p><span class="card-tag">Deep Learning</span> <span class="card-tag">Spatial ML</span></p>
+</section>
 </div>
 <div class="card-item">
-<p><span class="card-icon">🌳</span> ### Forest &amp; Landscape Ecology Studying how forest structure, composition, and disturbance regimes shape ecosystems across spatial and temporal scales.</p>
+<p><span class="card-icon">🌳</span></p>
+<section id="forest-landscape-ecology" class="level3">
+<h3 class="anchored" data-anchor-id="forest-landscape-ecology">Forest &amp; Landscape Ecology</h3>
+<p>Studying how forest structure, composition, and disturbance regimes shape ecosystems across spatial and temporal scales.</p>
 <p><span class="card-tag">Forest Ecology</span> <span class="card-tag">Landscape</span></p>
+</section>
 </div>
 </div>
 <hr>
@@ -217,6 +474,44 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <hr>
 </section>
+<section id="featured-tools" class="level2">
+<h2 class="anchored" data-anchor-id="featured-tools">Featured Tools</h2>
+<div class="card-grid two-col">
+<div class="card-item">
+<p><span class="card-icon">🌲</span></p>
+<section id="iland-workbench" class="level3">
+<h3 class="anchored" data-anchor-id="iland-workbench">iLAND Workbench</h3>
+<p>A dockable QGIS plugin that brings the iLAND individual-based forest landscape and disturbance model into a GIS workflow — runtime management, climate and soil data pipelines, and reproducible analysis, all inside QGIS.</p>
+<p><a href="./tools.html#iland-workbench">Read more →</a></p>
+<p><span class="card-tag">QGIS Plugin</span> <span class="card-tag">Forest Modeling</span> <span class="card-tag">Zenodo DOI</span></p>
+</section>
+</div>
+<div class="card-item">
+<p><span class="card-icon">📦</span></p>
+<section id="forestpulse" class="level3">
+<h3 class="anchored" data-anchor-id="forestpulse">forestPulse</h3>
+<p>An R package providing streamlined workflows for forest disturbance and recovery analysis from satellite time series — preprocessing, change detection, and visualization in a handful of functions.</p>
+<p><a href="./tools.html#forestpulse">Read more →</a></p>
+<p><span class="card-tag">R Package</span> <span class="card-tag">Change Detection</span></p>
+</section>
+</div>
+</div>
+<div class="stats-row">
+<div class="stat-item">
+<p><span class="stat-number">2</span> <span class="stat-label">Open-source tools published</span></p>
+</div>
+<div class="stat-item">
+<p><span class="stat-number">v4.1</span> <span class="stat-label">Latest iLAND Workbench release</span></p>
+</div>
+<div class="stat-item">
+<p><span class="stat-number">3</span> <span class="stat-label">Platforms supported: Windows, macOS, Linux</span></p>
+</div>
+<div class="stat-item">
+<p><span class="stat-number">DOI</span> <span class="stat-label">Archived &amp; citable on Zenodo</span></p>
+</div>
+</div>
+<hr>
+</section>
 <section id="cedar-lab" class="level2">
 <h2 class="anchored" data-anchor-id="cedar-lab">CEDAR Lab</h2>
 <section id="computational-ecology-data-analytics-remote-sensing" class="level3 highlight-box">
@@ -224,34 +519,77 @@ ul.task-list li input[type="checkbox"] {
 <p>CEDAR Lab focuses on developing and applying geospatial AI methods to pressing questions in forest and landscape ecology. We build open-source tools, publish reproducible research, and share knowledge through tutorials and educational content.</p>
 <p><a href="./about.html">Learn more →</a></p>
 </section>
-<div class="stats-row">
-<div class="stat-item">
-<p><span class="stat-number">🌲</span> <span class="stat-label">Forest Ecology</span></p>
-</div>
-<div class="stat-item">
-<p><span class="stat-number">🛰️</span> <span class="stat-label">Remote Sensing</span></p>
-</div>
-<div class="stat-item">
-<p><span class="stat-number">📦</span> <span class="stat-label">Open Source Tools</span></p>
-</div>
-<div class="stat-item">
-<p><span class="stat-number">🎓</span> <span class="stat-label">Tutorials &amp; Teaching</span></p>
-</div>
-</div>
 <hr>
 </section>
 <section id="latest-from-the-blog" class="level2">
 <h2 class="anchored" data-anchor-id="latest-from-the-blog">Latest from the Blog</h2>
-<p>Check out recent posts on GeoAI methods, R tutorials, and ecology research.</p>
-<p><a href="./blog.html">Visit the Blog →</a></p>
+<p>Recent posts on GeoAI methods, R tutorials, and ecology research.</p>
+<div id="listing-recent-posts" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="TmV3cyUyQ0dlb0FJ" data-listing-date-sort="1788580800000" data-listing-file-modified-sort="1788666585081" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="140">
+<a href="./posts/welcome/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Welcome to GeoAI for Ecology
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('TmV3cw=='); return false;">News</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('R2VvQUk='); return false;">GeoAI</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>Introducing this blog — a space for tutorials, research notes, and ideas at the intersection of geospatial AI and ecological science.</p>
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+Sep 5, 2026
+</div>
+</div>
+</div>
+</div></a>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+<p><a href="./blog.html">Browse all posts →</a></p>
+<section id="stay-in-the-loop" class="level3 subscribe-box">
+<h3 class="anchored" data-anchor-id="stay-in-the-loop">Stay in the loop</h3>
+<p>New tutorials, tool releases, and research notes — delivered once or twice a month. Or grab the <a href="blog.xml">RSS feed</a> if you’d rather not share an email.</p>
+<form class="subscribe-form" action="https://buttondown.com/api/emails/embed-subscribe/geoaiforecology" method="post" target="popupwindow" onsubmit="window.open('https://buttondown.com/geoaiforecology', 'popupwindow')">
+  <label for="bd-email-home" class="visually-hidden">Email address</label>
+  <input type="email" name="email" id="bd-email-home" placeholder="you@university.edu" required="">
+  <input type="hidden" value="1" name="embed">
+  <button type="submit">Subscribe</button>
+</form>
+<div class="subscribe-note">
+<p>No spam. Unsubscribe with one click. See <a href="./subscribe.html">all subscribe options</a>.</p>
+</div>
+</section>
 </section>
 </div>
+
 
 
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
     const icon = "";
     const anchorJS = new window.AnchorJS();
     anchorJS.options = {
@@ -337,6 +675,11 @@ ul.task-list li input[type="checkbox"] {
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
         }
       }
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
@@ -654,13 +997,58 @@ ul.task-list li input[type="checkbox"] {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-      &nbsp;
-    </div>   
+<p><strong>CEDAR Lab</strong> — Computational Ecology, Data Analytics &amp; Remote Sensing © 2024–2026 · Built with <a href="https://quarto.org">Quarto</a></p>
+</div>   
     <div class="nav-footer-center">
-<p>© 2024–2026 CEDAR Lab · Built with <a href="https://quarto.org">Quarto</a></p>
-</div>
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="./research.html">
+<p>Research</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="./tools.html">
+<p>Tools</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="./blog.html">
+<p>Blog</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="./subscribe.html">
+<p>Subscribe</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="./about.html">
+<p>About</p>
+</a>
+  </li>  
+</ul>
+    </div>
     <div class="nav-footer-right">
-      &nbsp;
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/thecedarlab">
+      <i class="bi bi-github" role="img" aria-label="GitHub">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://www.youtube.com/@geoai4ecology">
+      <i class="bi bi-youtube" role="img" aria-label="YouTube">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="./blog.xml">
+      <i class="bi bi-rss" role="img" aria-label="RSS feed">
+</i> 
+    </a>
+  </li>  
+</ul>
     </div>
   </div>
 </footer>

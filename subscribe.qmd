@@ -1,0 +1,98 @@
+---
+title: "Subscribe"
+pagetitle: "Subscribe — GeoAI for Ecology"
+description: "Get new tutorials, tool releases, and research notes from CEDAR Lab delivered by email or RSS."
+toc: false
+---
+
+::: {.content}
+
+Get new posts from **GeoAI for Ecology** as they're published — tutorials on remote sensing and GIS in R, explainers on machine learning methods for ecological data, and release notes for open-source tools like iLAND Workbench and forestPulse.
+
+No spam, no tracking, and you can unsubscribe with one click at any time.
+
+<!-- SETUP: replace `geoaiforecology` below with your Buttondown username
+     (both in the form `action` and in the `onsubmit` popup URL). -->
+
+::: {.subscribe-box}
+
+## Get it by email
+
+New posts land in your inbox. Roughly once or twice a month — never more.
+
+```{=html}
+<form
+  class="subscribe-form"
+  action="https://buttondown.com/api/emails/embed-subscribe/geoaiforecology"
+  method="post"
+  target="popupwindow"
+  onsubmit="window.open('https://buttondown.com/geoaiforecology', 'popupwindow')"
+>
+  <label for="bd-email" class="visually-hidden">Email address</label>
+  <input type="email" name="email" id="bd-email" placeholder="you@university.edu" required />
+  <input type="hidden" value="1" name="embed" />
+  <button type="submit">Subscribe</button>
+</form>
+```
+
+::: {.subscribe-note}
+Powered by [Buttondown](https://buttondown.com). Your address is never shared or sold.
+:::
+
+:::
+
+## Prefer RSS?
+
+The full blog is available as a feed, so you can read it in any reader without handing over an email address.
+
+::: {.card-grid}
+
+::: {.card-item}
+[📡]{.card-icon}
+
+### Feed URL
+Paste this into NetNewsWire, Feedly, Inoreader, Thunderbird, or any other RSS client.
+
+`https://geoaiforecology.com/blog.xml`
+
+[Open the feed](blog.xml)
+:::
+
+::: {.card-item}
+[🎥]{.card-icon}
+
+### YouTube
+Video tutorials on remote sensing, GIS, R, and geospatial AI. Subscribe there for new videos.
+
+[GeoAI for Ecology on YouTube](https://www.youtube.com/@geoai4ecology)
+
+[Tutorials]{.card-tag} [Video]{.card-tag}
+:::
+
+::: {.card-item}
+[🐙]{.card-icon}
+
+### GitHub
+Watch the CEDAR Lab organization to get notified about new releases and repositories.
+
+[github.com/thecedarlab](https://github.com/thecedarlab)
+
+[Releases]{.card-tag} [Code]{.card-tag}
+:::
+
+:::
+
+---
+
+## What you'll get
+
+::: {.highlight-box}
+### Topics covered
+
+- **R & Python tutorials** — hands-on geospatial workflows you can run yourself
+- **Methods explainers** — how ML and AI approaches actually work on ecological data
+- **Tool releases** — new versions of iLAND Workbench, forestPulse, and other packages
+- **Research updates** — preprints, publications, and conference talks from CEDAR Lab
+:::
+
+:::

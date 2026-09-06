@@ -1,7 +1,7 @@
 ---
 title: "Welcome to GeoAI for Ecology"
 description: "Introducing this blog — a space for tutorials, research notes, and ideas at the intersection of geospatial AI and ecological science."
-author: "Sushil Lamsal"
+author: "Sushil Paudel"
 date: "2026-09-05"
 categories: [News, GeoAI]
 ---
@@ -17,6 +17,6 @@ Posts here will cover a range of topics:
 - **Research updates** — new findings, preprints, and conference presentations
 - **Tool announcements** — releases and updates for open-source tools
 
-If you're also working at the intersection of AI and ecology, I'd love to hear from you. The best way to connect is through [GitHub](https://github.com/thecedarlab) or the [YouTube channel](https://youtube.com/@GeoAIforEcology).
+If you're also working at the intersection of AI and ecology, I'd love to hear from you. The best way to connect is through [GitHub](https://github.com/thecedarlab) or the [YouTube channel](https://www.youtube.com/@geoai4ecology).
 
-Stay tuned for more content coming soon.
+Stay tuned for more content coming soon — and if you'd like new posts delivered as they're published, you can [subscribe here](../../subscribe.qmd).

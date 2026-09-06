@@ -1,5 +1,6 @@
 ---
 title: "Tools & Packages"
+description: "Open-source software for geospatial ecology: iLAND Workbench (QGIS plugin for forest landscape modeling) and forestPulse (R package for forest change analysis)."
 toc: true
 ---
 
@@ -96,19 +97,21 @@ forestPulse is designed to make forest change analysis more accessible to ecolog
 devtools::install_github("thecedarlab/forestPulse")
 ```
 
-### Quick Start
+### Status
 
-```r
-library(forestPulse)
+forestPulse is under active development. The current state of the package:
 
-# Example workflow (placeholder)
-# Load your study area
-# Process satellite time series
-# Detect forest changes
-# Visualize results
-```
+| Area | Status |
+|------|--------|
+| Time series construction | In development |
+| Disturbance detection | In development |
+| Change magnitude & timing | Planned |
+| Visualization helpers | Planned |
+| Vignettes & reference docs | Planned |
 
-*Full documentation and vignettes coming soon.*
+The most accurate picture of what works today is the repository itself — issues and pull requests are welcome.
+
+[Follow development on GitHub](https://github.com/thecedarlab/forestPulse){.cta-btn .cta-solid style="font-size:0.88rem; padding:0.45rem 1.1rem;"}
 
 :::
 
@@ -120,6 +123,7 @@ library(forestPulse)
 
 ::: {.card-item}
 [🎥]{.card-icon}
+
 ### GeoAI for Ecology (YouTube)
 Video tutorials on remote sensing, GIS, R programming, and geospatial AI methods for ecological research.
 
@@ -130,12 +134,40 @@ Video tutorials on remote sensing, GIS, R programming, and geospatial AI methods
 
 ::: {.card-item}
 [💻]{.card-icon}
+
 ### Code & Data
 Reproducible code and datasets accompanying publications and tutorials. All hosted on GitHub under the CEDAR Lab organization.
 
 [Browse Repos](https://github.com/thecedarlab)
 
 [Open Source]{.card-tag} [Reproducible]{.card-tag}
+:::
+
+:::
+
+::: {.subscribe-box}
+
+### Get notified about new releases
+
+Tool releases, migration notes, and worked examples — by email once or twice a month, or by [RSS](blog.xml).
+
+```{=html}
+<form
+  class="subscribe-form"
+  action="https://buttondown.com/api/emails/embed-subscribe/geoaiforecology"
+  method="post"
+  target="popupwindow"
+  onsubmit="window.open('https://buttondown.com/geoaiforecology', 'popupwindow')"
+>
+  <label for="bd-email-tools" class="visually-hidden">Email address</label>
+  <input type="email" name="email" id="bd-email-tools" placeholder="you@university.edu" required />
+  <input type="hidden" value="1" name="embed" />
+  <button type="submit">Subscribe</button>
+</form>
+```
+
+::: {.subscribe-note}
+You can also [watch the repositories on GitHub](https://github.com/thecedarlab) for release notifications.
 :::
 
 :::

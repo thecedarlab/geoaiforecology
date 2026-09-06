@@ -1,9 +1,25 @@
 ---
 title: "GeoAI for Ecology"
 pagetitle: "GeoAI for Ecology — Sushil Paudel"
+description: "Geospatial artificial intelligence, remote sensing, and open-source tools for understanding forest and landscape change."
 toc: false
 page-layout: full
+title-block-style: none
+listing:
+  - id: recent-posts
+    contents: posts
+    type: grid
+    max-items: 3
+    sort: "date desc"
+    fields: [date, title, description, categories]
+    grid-columns: 3
 ---
+
+```{=html}
+<!-- The hero banner below carries the page title, so suppress Quarto's
+     default title block on this page only. -->
+<style>#title-block-header { display: none; }</style>
+```
 
 ::: {.hero-banner}
 
@@ -20,7 +36,7 @@ Bridging geospatial artificial intelligence and ecological science to understand
 ::: {.cta-group}
 [Explore Research](research.qmd){.cta-btn .cta-primary}
 [Tools & Packages](tools.qmd){.cta-btn .cta-secondary}
-[YouTube Channel](https://www.youtube.com/@geoai4ecology){.cta-btn .cta-secondary}
+[Subscribe](subscribe.qmd){.cta-btn .cta-secondary}
 :::
 
 :::
@@ -35,6 +51,7 @@ I develop computational methods that combine machine learning, remote sensing, a
 
 ::: {.card-item}
 [🛰️]{.card-icon}
+
 ### Remote Sensing & GIS
 Leveraging satellite imagery, LiDAR, and geospatial tools to map and monitor forests at scale — from individual tree crowns to continental patterns.
 
@@ -43,6 +60,7 @@ Leveraging satellite imagery, LiDAR, and geospatial tools to map and monitor for
 
 ::: {.card-item}
 [🤖]{.card-icon}
+
 ### GeoAI & Machine Learning
 Applying deep learning, computer vision, and spatial statistics to extract ecological insights from complex geospatial datasets.
 
@@ -51,6 +69,7 @@ Applying deep learning, computer vision, and spatial statistics to extract ecolo
 
 ::: {.card-item}
 [🌳]{.card-icon}
+
 ### Forest & Landscape Ecology
 Studying how forest structure, composition, and disturbance regimes shape ecosystems across spatial and temporal scales.
 
@@ -85,6 +104,60 @@ Building open-source software that makes geospatial ecology research more reprod
 
 ---
 
+## Featured Tools
+
+::: {.card-grid .two-col}
+
+::: {.card-item}
+[🌲]{.card-icon}
+
+### iLAND Workbench
+A dockable QGIS plugin that brings the iLAND individual-based forest landscape and disturbance model into a GIS workflow — runtime management, climate and soil data pipelines, and reproducible analysis, all inside QGIS.
+
+[Read more →](tools.qmd#iland-workbench)
+
+[QGIS Plugin]{.card-tag} [Forest Modeling]{.card-tag} [Zenodo DOI]{.card-tag}
+:::
+
+::: {.card-item}
+[📦]{.card-icon}
+
+### forestPulse
+An R package providing streamlined workflows for forest disturbance and recovery analysis from satellite time series — preprocessing, change detection, and visualization in a handful of functions.
+
+[Read more →](tools.qmd#forestpulse)
+
+[R Package]{.card-tag} [Change Detection]{.card-tag}
+:::
+
+:::
+
+::: {.stats-row}
+
+::: {.stat-item}
+[2]{.stat-number}
+[Open-source tools published]{.stat-label}
+:::
+
+::: {.stat-item}
+[v4.1]{.stat-number}
+[Latest iLAND Workbench release]{.stat-label}
+:::
+
+::: {.stat-item}
+[3]{.stat-number}
+[Platforms supported: Windows, macOS, Linux]{.stat-label}
+:::
+
+::: {.stat-item}
+[DOI]{.stat-number}
+[Archived & citable on Zenodo]{.stat-label}
+:::
+
+:::
+
+---
+
 ## CEDAR Lab
 
 ::: {.highlight-box}
@@ -95,36 +168,42 @@ CEDAR Lab focuses on developing and applying geospatial AI methods to pressing q
 [Learn more →](about.qmd)
 :::
 
-::: {.stats-row}
-
-::: {.stat-item}
-[🌲]{.stat-number}
-[Forest Ecology]{.stat-label}
-:::
-
-::: {.stat-item}
-[🛰️]{.stat-number}
-[Remote Sensing]{.stat-label}
-:::
-
-::: {.stat-item}
-[📦]{.stat-number}
-[Open Source Tools]{.stat-label}
-:::
-
-::: {.stat-item}
-[🎓]{.stat-number}
-[Tutorials & Teaching]{.stat-label}
-:::
-
-:::
-
 ---
 
 ## Latest from the Blog
 
-Check out recent posts on GeoAI methods, R tutorials, and ecology research.
+Recent posts on GeoAI methods, R tutorials, and ecology research.
 
-[Visit the Blog →](blog.qmd)
+::: {#recent-posts}
+:::
+
+[Browse all posts →](blog.qmd)
+
+::: {.subscribe-box}
+
+### Stay in the loop
+
+New tutorials, tool releases, and research notes — delivered once or twice a month. Or grab the [RSS feed](blog.xml) if you'd rather not share an email.
+
+```{=html}
+<form
+  class="subscribe-form"
+  action="https://buttondown.com/api/emails/embed-subscribe/geoaiforecology"
+  method="post"
+  target="popupwindow"
+  onsubmit="window.open('https://buttondown.com/geoaiforecology', 'popupwindow')"
+>
+  <label for="bd-email-home" class="visually-hidden">Email address</label>
+  <input type="email" name="email" id="bd-email-home" placeholder="you@university.edu" required />
+  <input type="hidden" value="1" name="embed" />
+  <button type="submit">Subscribe</button>
+</form>
+```
+
+::: {.subscribe-note}
+No spam. Unsubscribe with one click. See [all subscribe options](subscribe.qmd).
+:::
+
+:::
 
 :::

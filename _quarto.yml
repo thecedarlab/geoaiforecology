@@ -6,11 +6,20 @@ project:
 
 website:
   title: "GeoAI for Ecology"
+  description: "Geospatial artificial intelligence, remote sensing, and open-source tools for understanding forest and landscape change — research and tutorials from CEDAR Lab."
   favicon: "images/favicon.png"
   site-url: https://geoaiforecology.com
+  repo-url: https://github.com/thecedarlab
+  image: "images/og-image.png"
+  open-graph:
+    locale: en_US
+    site-name: "GeoAI for Ecology"
+  twitter-card:
+    card-style: summary_large_image
   navbar:
     background: "#1a2f23"
     foreground: "#e8efe6"
+    search: true
     left:
       - href: index.qmd
         text: Home
@@ -23,22 +32,60 @@ website:
       - href: about.qmd
         text: About
     right:
+      - href: subscribe.qmd
+        text: Subscribe
       - icon: github
         href: https://github.com/thecedarlab
         aria-label: GitHub
       - icon: youtube
         href: https://www.youtube.com/@geoai4ecology
         aria-label: YouTube
+      - icon: rss
+        href: blog.xml
+        aria-label: RSS feed
   page-footer:
-    center: "© 2024–2026 CEDAR Lab · Built with [Quarto](https://quarto.org)"
     background: "#1a2f23"
     foreground: "#a3b8a0"
+    left: |
+      **CEDAR Lab** — Computational Ecology, Data Analytics & Remote Sensing
+      © 2024–2026 · Built with [Quarto](https://quarto.org)
+    center:
+      - text: "Research"
+        href: research.qmd
+      - text: "Tools"
+        href: tools.qmd
+      - text: "Blog"
+        href: blog.qmd
+      - text: "Subscribe"
+        href: subscribe.qmd
+      - text: "About"
+        href: about.qmd
+    right:
+      - icon: github
+        href: https://github.com/thecedarlab
+        aria-label: GitHub
+      - icon: youtube
+        href: https://www.youtube.com/@geoai4ecology
+        aria-label: YouTube
+      - icon: rss
+        href: blog.xml
+        aria-label: RSS feed
 
 format:
   html:
     theme:
       light: cosmo
+      dark: darkly
     css: styles.css
     toc: true
     code-copy: true
     code-overflow: wrap
+    anchor-sections: true
+    link-external-newwindow: true
+    link-external-icon: false
+    include-in-header:
+      - text: |
+          <link rel="alternate" type="application/rss+xml" title="GeoAI for Ecology" href="https://geoaiforecology.com/blog.xml">
+          <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+          <meta name="author" content="Sushil Paudel">
+          <meta name="theme-color" content="#1a2f23">

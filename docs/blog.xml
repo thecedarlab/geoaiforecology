@@ -8,14 +8,22 @@
 <title>GeoAI for Ecology</title>
 <link>https://geoaiforecology.com/blog.html</link>
 <atom:link href="https://geoaiforecology.com/blog.xml" rel="self" type="application/rss+xml"/>
-<description></description>
+<description>Tutorials, research notes, and thoughts on GeoAI, remote sensing, and forest ecology.</description>
+<image>
+<url>https://geoaiforecology.com/images/og-image.png</url>
+<title>GeoAI for Ecology</title>
+<link>https://geoaiforecology.com/blog.html</link>
+<height>76</height>
+<width>144</width>
+</image>
 <generator>quarto-1.10.18</generator>
 <lastBuildDate>Sat, 05 Sep 2026 04:00:00 GMT</lastBuildDate>
 <item>
   <title>Welcome to GeoAI for Ecology</title>
-  <dc:creator>Sushil Lamsal</dc:creator>
+  <dc:creator>Sushil Paudel</dc:creator>
   <link>https://geoaiforecology.com/posts/welcome/</link>
   <description><![CDATA[ 
+
 
 
 
@@ -30,8 +38,8 @@
 <li><strong>Research updates</strong> — new findings, preprints, and conference presentations</li>
 <li><strong>Tool announcements</strong> — releases and updates for open-source tools</li>
 </ul>
-<p>If you’re also working at the intersection of AI and ecology, I’d love to hear from you. The best way to connect is through <a href="https://github.com/thecedarlab">GitHub</a> or the <a href="https://youtube.com/@GeoAIforEcology">YouTube channel</a>.</p>
-<p>Stay tuned for more content coming soon.</p>
+<p>If you’re also working at the intersection of AI and ecology, I’d love to hear from you. The best way to connect is through <a href="https://github.com/thecedarlab">GitHub</a> or the <a href="https://www.youtube.com/@geoai4ecology">YouTube channel</a>.</p>
+<p>Stay tuned for more content coming soon — and if you’d like new posts delivered as they’re published, you can <a href="../../subscribe.html">subscribe here</a>.</p>
 
 
 </section>

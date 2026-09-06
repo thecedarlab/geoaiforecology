@@ -1,12 +1,50 @@
 ---
 title: "Blog"
+description: "Tutorials, research notes, and thoughts on GeoAI, remote sensing, and forest ecology."
 listing:
-  contents: posts
-  sort: "date desc"
-  type: default
-  categories: true
-  feed: true
+  - id: posts
+    contents: posts
+    sort: "date desc"
+    type: default
+    categories: true
+    sort-ui: [date, title]
+    filter-ui: true
+    fields: [date, title, description, categories, reading-time]
+    feed:
+      title: "GeoAI for Ecology"
+      description: "Tutorials, research notes, and thoughts on GeoAI, remote sensing, and forest ecology."
 toc: false
 ---
 
-Tutorials, research notes, and thoughts on GeoAI, remote sensing, and forest ecology.
+[Subscribe by email](subscribe.qmd){.cta-btn .cta-solid style="font-size:0.88rem; padding:0.45rem 1.1rem;"}
+[RSS feed](blog.xml){.cta-btn .cta-outline style="font-size:0.88rem; padding:0.45rem 1.1rem;"}
+
+::: {#posts}
+:::
+
+::: {.subscribe-box style="margin-top:3rem;"}
+
+### Never miss a post
+
+New tutorials, tool releases, and research notes — straight to your inbox, once or twice a month.
+
+```{=html}
+<form
+  class="subscribe-form"
+  action="https://buttondown.com/api/emails/embed-subscribe/geoaiforecology"
+  method="post"
+  target="popupwindow"
+  onsubmit="window.open('https://buttondown.com/geoaiforecology', 'popupwindow')"
+>
+  <label for="bd-email-blog" class="visually-hidden">Email address</label>
+  <input type="email" name="email" id="bd-email-blog" placeholder="you@university.edu" required />
+  <input type="hidden" value="1" name="embed" />
+  <button type="submit">Subscribe</button>
+</form>
+```
+
+::: {.subscribe-note}
+Prefer a reader? Grab the [RSS feed](blog.xml). Unsubscribe anytime.
+:::
+
+:::

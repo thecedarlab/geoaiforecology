@@ -1,5 +1,6 @@
 ---
 title: "Research"
+description: "Geospatial AI and remote sensing methods for forest disturbance mapping, landscape connectivity, spatial modeling, and biodiversity assessment."
 toc: true
 ---
 
@@ -9,36 +10,40 @@ My research sits at the intersection of geospatial artificial intelligence and e
 
 ## Research Areas
 
-::: {.card-grid}
+::: {.card-grid .two-col}
 
 ::: {.card-item}
 [🛰️]{.card-icon}
+
 ### Forest Disturbance Mapping
-Automated detection of deforestation, degradation, and recovery using satellite time series and machine learning classifiers.
+Automated detection of deforestation, degradation, and recovery using satellite time series and machine learning classifiers. Dense Landsat and Sentinel-2 stacks are used to pinpoint both the timing and the magnitude of change, so that gradual degradation is separated from abrupt clearing.
 
 [Change Detection]{.card-tag} [Landsat]{.card-tag} [Sentinel]{.card-tag}
 :::
 
 ::: {.card-item}
 [🌍]{.card-icon}
+
 ### Landscape Connectivity
-Modeling how landscape structure and fragmentation affect species movement, gene flow, and ecosystem resilience.
+Modeling how landscape structure and fragmentation affect species movement, gene flow, and ecosystem resilience. Graph-theoretic and circuit-based approaches turn land cover maps into networks whose weak links reveal conservation priorities.
 
 [Connectivity]{.card-tag} [Graph Theory]{.card-tag}
 :::
 
 ::: {.card-item}
 [📊]{.card-icon}
+
 ### Spatial Modeling
-Developing geospatial machine learning models for ecological prediction, including species distribution models and biomass estimation.
+Developing geospatial machine learning models for ecological prediction, including species distribution models and above-ground biomass estimation. Emphasis is on spatially aware validation, so that reported accuracy survives contact with new landscapes.
 
 [GeoAI]{.card-tag} [Prediction]{.card-tag}
 :::
 
 ::: {.card-item}
 [🌿]{.card-icon}
+
 ### Biodiversity Assessment
-Using multi-sensor remote sensing to characterize habitats and predict biodiversity patterns across spatial scales.
+Using multi-sensor remote sensing to characterize habitats and predict biodiversity patterns across spatial scales. Fusing optical, radar, and LiDAR data captures both the composition and the three-dimensional structure that species respond to.
 
 [Biodiversity]{.card-tag} [LiDAR]{.card-tag}
 :::
@@ -47,13 +52,72 @@ Using multi-sensor remote sensing to characterize habitats and predict biodivers
 
 ---
 
+## Approach
+
+::: {.panel-tabset}
+
+### Open by default
+
+Code, data, and methods are released openly wherever licensing allows. Analyses are built as reproducible pipelines rather than one-off scripts, so results can be re-run, checked, and extended by others.
+
+### Freely available data
+
+The methods here are designed around openly licensed Earth observation data — Landsat, Sentinel, SoilGrids, LANDFIRE, ESA WorldCover — so that they remain usable by researchers and practitioners without commercial imagery budgets.
+
+### Built for practitioners
+
+Research outputs are packaged as tools people can actually run: QGIS plugins, R packages, and documented workflows, rather than results that stop at the figure in a paper.
+
+:::
+
+---
+
 ## Publications
 
-*Publications will be listed here as they become available.*
+<!-- SETUP: add journal articles and preprints as `.pub-item` blocks below,
+     newest first, following the pattern of the software entry. -->
+
+### Software
+
+::: {.pub-list}
+
+::: {.pub-item}
+[iLAND Workbench: QGIS-based iLAND Workbench for hassle-free installation and reproducible analysis workflows]{.pub-title}
+
+::: {.pub-meta}
+Paudel, S. (2026). *Zenodo.* Version 4.1.0.
+:::
+
+::: {.pub-links}
+[DOI: 10.5281/zenodo.19300115](https://doi.org/10.5281/zenodo.19300115)
+[Code](https://github.com/paudelsushil/iLAND-QGIS-plugin)
+[Docs](tools.qmd#iland-workbench)
+:::
+:::
+
+:::
+
+### Journal articles & preprints
+
+Peer-reviewed articles will be listed here as they appear. In the meantime, the most current list is on Google Scholar.
+
+<!-- SETUP: uncomment once you have the profile links —
+[Google Scholar](https://scholar.google.com/citations?user=YOUR_ID){.cta-btn .cta-solid style="font-size:0.88rem; padding:0.45rem 1.1rem;"}
+[ORCID](https://orcid.org/0000-0000-0000-0000){.cta-btn .cta-outline style="font-size:0.88rem; padding:0.45rem 1.1rem;"}
+[Download CV](files/sushil-paudel-cv.pdf){.cta-btn .cta-outline style="font-size:0.88rem; padding:0.45rem 1.1rem;"}
+-->
+
+---
+
+## Data & Code Availability
+
+Analysis code and, where licensing permits, derived datasets accompanying this research are published under the [CEDAR Lab GitHub organization](https://github.com/thecedarlab). Software releases are archived on Zenodo so they can be cited with a persistent DOI.
 
 ::: {.highlight-box}
 ### Interested in Collaboration?
-I'm always open to collaborations at the intersection of GeoAI and ecology. If you're working on related problems, feel free to reach out.
+I'm always open to collaborations at the intersection of GeoAI and ecology — joint analyses, method development, student co-supervision, or applying these tools to your study system.
+
+[Get in touch →](about.qmd#get-in-touch)
 :::
 
 :::

@@ -1,5 +1,7 @@
 ---
 title: "About"
+pagetitle: "About — Sushil Paudel | GeoAI for Ecology"
+description: "Sushil Paudel is a PhD researcher working at the intersection of geospatial AI, remote sensing, and forest ecology, and the founder of CEDAR Lab."
 toc: false
 ---
 
@@ -7,17 +9,31 @@ toc: false
 
 ::: {.profile-section}
 
-![Sushil Paudel](images/profile-placeholder.svg){.profile-photo fig-alt="Sushil Paudel"}
+<!-- SETUP: replace images/profile-placeholder.svg with a real headshot
+     (e.g. images/sushil-paudel.jpg, roughly square, 600×600 or larger). -->
+![](images/profile-placeholder.svg){.profile-photo fig-alt="Portrait of Sushil Paudel"}
 
 ::: {.profile-info}
 
 ## Sushil Paudel
 
-**PhD Researcher · CEDAR Lab**
+**PhD Researcher · Founder, CEDAR Lab**
 
 I'm a researcher working at the intersection of geospatial artificial intelligence and ecology. My work combines machine learning, remote sensing, and spatial analysis to study forest and landscape dynamics — understanding how ecosystems change and what we can do about it.
 
 I founded **CEDAR Lab** (Computational Ecology, Data Analytics & Remote Sensing) to advance open, reproducible research in geospatial ecology, and I run the **GeoAI for Ecology** YouTube channel to make these methods accessible to a wider audience.
+
+::: {.profile-links}
+[🐙 GitHub](https://github.com/thecedarlab)
+[🎥 YouTube](https://www.youtube.com/@geoai4ecology)
+[📡 Blog RSS](blog.xml)
+<!-- SETUP: uncomment and fill in once you have the links —
+[🎓 Google Scholar](https://scholar.google.com/citations?user=YOUR_ID)
+[🔗 ORCID](https://orcid.org/0000-0000-0000-0000)
+[💼 LinkedIn](https://www.linkedin.com/in/YOUR_HANDLE)
+[📄 Download CV](files/sushil-paudel-cv.pdf)
+-->
+:::
 
 :::
 
@@ -29,36 +45,116 @@ I founded **CEDAR Lab** (Computational Ecology, Data Analytics & Remote Sensing)
 
 My research draws on forest ecology, landscape ecology, geospatial data science, and AI. I'm particularly interested in how we can use freely available satellite data and modern machine learning to answer ecological questions that matter for conservation and land management.
 
-I believe in open science — the tools we build, the code we write, and the knowledge we generate should be accessible to everyone.
+I believe in open science — the tools we build, the code we write, and the knowledge we generate should be accessible to everyone. Everything on this site, from the software to the tutorials, is released openly so that others can use, check, and build on it.
 
 ---
 
-## Connect
+## What I'm Working On
 
 ::: {.card-grid}
 
 ::: {.card-item}
-[📧]{.card-icon}
-### Email
-Get in touch for collaborations, speaking invitations, or questions about my research.
+[🌲]{.card-icon}
 
-*email@example.com*
+### Forest landscape modeling
+Making the iLAND simulation model usable from within QGIS, so that forest and disturbance modeling doesn't require leaving your GIS environment.
+
+[iLAND Workbench](tools.qmd#iland-workbench)
 :::
 
 ::: {.card-item}
+[📦]{.card-icon}
+
+### Open R tooling
+Building forestPulse to turn multi-step satellite change-detection workflows into a handful of well-documented R functions.
+
+[forestPulse](tools.qmd#forestpulse)
+:::
+
+::: {.card-item}
+[🎓]{.card-icon}
+
+### Teaching & outreach
+Producing video tutorials and written guides on remote sensing, GIS, and geospatial AI for ecologists getting started with these methods.
+
+[GeoAI for Ecology on YouTube](https://www.youtube.com/@geoai4ecology)
+:::
+
+:::
+
+---
+
+## Get in Touch
+
+I'm always open to collaborations, speaking invitations, and questions about the research or the tools. Drop me a message and I'll get back to you.
+
+<!-- SETUP: create a free form at https://formspree.io, then replace
+     YOUR_FORM_ID below with the endpoint ID it gives you. Until you do,
+     this form will not deliver messages. -->
+
+```{=html}
+<form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+  <div class="form-row">
+    <div>
+      <label for="cf-name">Your name</label>
+      <input type="text" id="cf-name" name="name" placeholder="Jane Rivera" required />
+    </div>
+    <div>
+      <label for="cf-email">Your email</label>
+      <input type="email" id="cf-email" name="email" placeholder="you@university.edu" required />
+    </div>
+  </div>
+  <div>
+    <label for="cf-subject">Subject</label>
+    <input type="text" id="cf-subject" name="subject" placeholder="Collaboration on forest disturbance mapping" />
+  </div>
+  <div>
+    <label for="cf-message">Message</label>
+    <textarea id="cf-message" name="message" placeholder="Tell me a bit about what you're working on…" required></textarea>
+  </div>
+  <button type="submit">Send message</button>
+</form>
+```
+
+Prefer somewhere else? You can also open an issue on [GitHub](https://github.com/thecedarlab) or leave a comment on the [YouTube channel](https://www.youtube.com/@geoai4ecology).
+
+---
+
+## Elsewhere
+
+::: {.card-grid}
+
+::: {.card-item}
 [🐙]{.card-icon}
+
 ### GitHub
-Browse code, contribute to projects, or open an issue.
+Source code for CEDAR Lab projects, plus the [iLAND Workbench plugin](https://github.com/paudelsushil/iLAND-QGIS-plugin) under my personal account.
 
 [github.com/thecedarlab](https://github.com/thecedarlab)
+
+[Open Source]{.card-tag}
 :::
 
 ::: {.card-item}
 [🎥]{.card-icon}
+
 ### YouTube
 Tutorials and explainers on GeoAI and ecological remote sensing.
 
 [GeoAI for Ecology](https://www.youtube.com/@geoai4ecology)
+
+[Tutorials]{.card-tag}
+:::
+
+::: {.card-item}
+[✉️]{.card-icon}
+
+### Newsletter
+New posts, tool releases, and research notes by email — or by RSS if you prefer.
+
+[Subscribe →](subscribe.qmd)
+
+[Email]{.card-tag} [RSS]{.card-tag}
 :::
 
 :::
