@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>GeoAI for Ecology</title>
+<link>https://geoaiforecology.com/blog.html</link>
+<atom:link href="https://geoaiforecology.com/blog.xml" rel="self" type="application/rss+xml"/>
+<description></description>
+<generator>quarto-1.10.18</generator>
+<lastBuildDate>Sat, 05 Sep 2026 04:00:00 GMT</lastBuildDate>
+<item>
+  <title>Welcome to GeoAI for Ecology</title>
+  <dc:creator>Sushil Lamsal</dc:creator>
+  <link>https://geoaiforecology.com/posts/welcome/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Welcome to the GeoAI for Ecology blog. This is where I’ll share tutorials on remote sensing and GIS in R, deep dives into machine learning methods for ecological data, research updates from CEDAR Lab, and reflections on the evolving landscape of geospatial AI.</p>
+<section id="what-to-expect" class="level2">
+<h2 class="anchored" data-anchor-id="what-to-expect">What to Expect</h2>
+<p>Posts here will cover a range of topics:</p>
+<ul>
+<li><strong>R tutorials</strong> — step-by-step guides using forestPulse and other geospatial packages</li>
+<li><strong>Methods explainers</strong> — breaking down ML and AI approaches for ecological applications</li>
+<li><strong>Research updates</strong> — new findings, preprints, and conference presentations</li>
+<li><strong>Tool announcements</strong> — releases and updates for open-source tools</li>
+</ul>
+<p>If you’re also working at the intersection of AI and ecology, I’d love to hear from you. The best way to connect is through <a href="https://github.com/thecedarlab">GitHub</a> or the <a href="https://youtube.com/@GeoAIforEcology">YouTube channel</a>.</p>
+<p>Stay tuned for more content coming soon.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>News</category>
+  <category>GeoAI</category>
+  <guid>https://geoaiforecology.com/posts/welcome/</guid>
+  <pubDate>Sat, 05 Sep 2026 04:00:00 GMT</pubDate>
+</item>
+</channel>
+</rss>

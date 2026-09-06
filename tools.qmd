@@ -1,0 +1,85 @@
+---
+title: "Tools & Packages"
+toc: true
+---
+
+::: {.content}
+
+Open-source software is central to reproducible ecological research. Here are the tools I develop and maintain.
+
+---
+
+## forestPulse
+
+::: {.highlight-box}
+### 📦 forestPulse — An R Package for Forest Change Analysis
+
+forestPulse provides streamlined workflows for analyzing forest disturbance and recovery using satellite remote sensing data. It simplifies complex geospatial operations into accessible R functions.
+
+[GitHub Repository](https://github.com/thecedarlab/forestPulse){.cta-btn .cta-primary style="margin-top: 1rem; font-size: 0.9rem; padding: 0.5rem 1.2rem;"}
+:::
+
+::: {.panel-tabset}
+
+### Overview
+
+forestPulse is designed to make forest change analysis more accessible to ecologists and conservation practitioners. The package handles:
+
+- Satellite image preprocessing and time series construction
+- Forest disturbance detection algorithms
+- Change magnitude and timing estimation
+- Visualization of forest dynamics
+
+### Installation
+
+```r
+# Install from GitHub
+# install.packages("devtools")
+devtools::install_github("thecedarlab/forestPulse")
+```
+
+### Quick Start
+
+```r
+library(forestPulse)
+
+# Example workflow (placeholder)
+# Load your study area
+# Process satellite time series
+# Detect forest changes
+# Visualize results
+```
+
+*Full documentation and vignettes coming soon.*
+
+:::
+
+---
+
+## Other Resources
+
+::: {.card-grid}
+
+::: {.card-item}
+[🎥]{.card-icon}
+### GeoAI for Ecology (YouTube)
+Video tutorials on remote sensing, GIS, R programming, and geospatial AI methods for ecological research.
+
+[Visit Channel](https://youtube.com/@GeoAIforEcology)
+
+[Tutorials]{.card-tag} [R]{.card-tag} [GIS]{.card-tag}
+:::
+
+::: {.card-item}
+[💻]{.card-icon}
+### Code & Data
+Reproducible code and datasets accompanying publications and tutorials. All hosted on GitHub under the CEDAR Lab organization.
+
+[Browse Repos](https://github.com/thecedarlab)
+
+[Open Source]{.card-tag} [Reproducible]{.card-tag}
+:::
+
+:::
+
+:::

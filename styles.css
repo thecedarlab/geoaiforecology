@@ -1,0 +1,329 @@
+/* ── GeoAI for Ecology — Custom Styles ────────────────────────── */
+/* Deep forest palette with modern, clean lines                   */
+
+:root {
+  --forest-dark: #1a2f23;
+  --forest-mid: #2d5a3f;
+  --forest-light: #3e7a56;
+  --canopy: #4a9e6b;
+  --leaf-bright: #6bc48f;
+  --mist: #e8efe6;
+  --bark: #8b7355;
+  --sky: #4a90a4;
+  --text-primary: #1c2b22;
+  --text-secondary: #4a5d50;
+  --card-shadow: rgba(26, 47, 35, 0.08);
+}
+
+/* ── Typography ──────────────────────────────────────────────── */
+
+body {
+  color: var(--text-primary);
+  line-height: 1.7;
+}
+
+h1, h2, h3, h4 {
+  color: var(--forest-dark);
+  font-weight: 600;
+}
+
+/* ── Navbar tweaks ───────────────────────────────────────────── */
+
+.navbar {
+  border-bottom: 2px solid var(--canopy);
+  backdrop-filter: blur(8px);
+}
+
+.navbar-brand {
+  font-weight: 700 !important;
+  letter-spacing: 0.01em;
+}
+
+/* ── Hero section ────────────────────────────────────────────── */
+
+.hero-banner {
+  background: linear-gradient(135deg, var(--forest-dark) 0%, var(--forest-mid) 50%, var(--forest-light) 100%);
+  color: white;
+  padding: 5rem 2rem;
+  margin: -1rem -1rem 3rem -1rem;
+  border-radius: 0 0 2rem 2rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-banner::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background:
+    radial-gradient(circle at 20% 80%, rgba(106, 196, 143, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(74, 144, 164, 0.12) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.hero-banner h1 {
+  color: white;
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+
+.hero-banner .subtitle {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.85);
+  max-width: 600px;
+  margin: 0 auto 2rem auto;
+  line-height: 1.6;
+  position: relative;
+}
+
+.hero-badge {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  padding: 0.35rem 1rem;
+  border-radius: 2rem;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 1.5rem;
+  backdrop-filter: blur(4px);
+  position: relative;
+}
+
+/* ── CTA buttons ─────────────────────────────────────────────── */
+
+.cta-group {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.cta-btn {
+  display: inline-block;
+  padding: 0.7rem 1.8rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cta-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+}
+
+.cta-primary {
+  background: white;
+  color: var(--forest-dark);
+}
+
+.cta-secondary {
+  background: rgba(255, 255, 255, 0.12);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* ── Section headings ────────────────────────────────────────── */
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.section-heading h2 {
+  font-size: 1.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.section-heading p {
+  color: var(--text-secondary);
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+/* ── Project / Feature cards ─────────────────────────────────── */
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.card-item {
+  background: white;
+  border: 1px solid #dde6dd;
+  border-radius: 0.75rem;
+  padding: 1.8rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.card-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px var(--card-shadow);
+  border-color: var(--canopy);
+}
+
+.card-icon {
+  font-size: 2rem;
+  margin-bottom: 0.8rem;
+  display: block;
+}
+
+.card-item h3 {
+  font-size: 1.15rem;
+  margin-bottom: 0.5rem;
+  color: var(--forest-dark);
+}
+
+.card-item p {
+  color: var(--text-secondary);
+  font-size: 0.92rem;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+.card-tag {
+  display: inline-block;
+  background: var(--mist);
+  color: var(--forest-mid);
+  padding: 0.2rem 0.65rem;
+  border-radius: 1rem;
+  font-size: 0.78rem;
+  font-weight: 500;
+  margin-top: 0.8rem;
+  margin-right: 0.3rem;
+}
+
+/* ── Stats row ───────────────────────────────────────────────── */
+
+.stats-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1.5rem;
+  margin: 2.5rem 0;
+  text-align: center;
+}
+
+.stat-item {
+  padding: 1.2rem;
+}
+
+.stat-number {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--forest-mid);
+  line-height: 1;
+  margin-bottom: 0.3rem;
+}
+
+.stat-label {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+/* ── Highlight box ───────────────────────────────────────────── */
+
+.highlight-box {
+  background: linear-gradient(135deg, var(--mist) 0%, #f0f5ee 100%);
+  border-left: 4px solid var(--canopy);
+  border-radius: 0 0.75rem 0.75rem 0;
+  padding: 1.5rem 2rem;
+  margin: 2rem 0;
+}
+
+.highlight-box h3 {
+  color: var(--forest-mid);
+  margin-bottom: 0.4rem;
+}
+
+/* ── Tab panel styling ───────────────────────────────────────── */
+
+.nav-tabs .nav-link {
+  color: var(--text-secondary);
+  border: none;
+  border-bottom: 2px solid transparent;
+  font-weight: 500;
+}
+
+.nav-tabs .nav-link.active {
+  color: var(--forest-mid);
+  border-bottom-color: var(--canopy);
+  background: transparent;
+}
+
+/* ── Profile card (About page) ───────────────────────────────── */
+
+.profile-section {
+  display: flex;
+  gap: 2.5rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+}
+
+.profile-photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 1rem;
+  object-fit: cover;
+  border: 3px solid var(--canopy);
+}
+
+.profile-info {
+  flex: 1;
+  min-width: 280px;
+}
+
+/* ── Responsive ──────────────────────────────────────────────── */
+
+@media (max-width: 768px) {
+  .hero-banner {
+    padding: 3rem 1.5rem;
+  }
+
+  .hero-banner h1 {
+    font-size: 2rem;
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+/* ── Page content width ──────────────────────────────────────── */
+
+.content {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* ── Blog listing ────────────────────────────────────────────── */
+
+.quarto-listing {
+  margin-top: 1rem;
+}
+
+div.quarto-post {
+  border-bottom: 1px solid #dde6dd;
+  padding: 1.2rem 0;
+}
+
+div.quarto-post:hover {
+  background: var(--mist);
+  border-radius: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}

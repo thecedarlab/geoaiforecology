@@ -1,0 +1,66 @@
+---
+title: "About"
+toc: false
+---
+
+::: {.content}
+
+::: {.profile-section}
+
+![Sushil Lamsal](images/profile-placeholder.svg){.profile-photo fig-alt="Sushil Lamsal"}
+
+::: {.profile-info}
+
+## Sushil Lamsal
+
+**PhD Researcher · CEDAR Lab**
+
+I'm a researcher working at the intersection of geospatial artificial intelligence and ecology. My work combines machine learning, remote sensing, and spatial analysis to study forest and landscape dynamics — understanding how ecosystems change and what we can do about it.
+
+I founded **CEDAR Lab** (Computational Ecology, Data Analytics & Remote Sensing) to advance open, reproducible research in geospatial ecology, and I run the **GeoAI for Ecology** YouTube channel to make these methods accessible to a wider audience.
+
+:::
+
+:::
+
+---
+
+## Background
+
+My research draws on forest ecology, landscape ecology, geospatial data science, and AI. I'm particularly interested in how we can use freely available satellite data and modern machine learning to answer ecological questions that matter for conservation and land management.
+
+I believe in open science — the tools we build, the code we write, and the knowledge we generate should be accessible to everyone.
+
+---
+
+## Connect
+
+::: {.card-grid}
+
+::: {.card-item}
+[📧]{.card-icon}
+### Email
+Get in touch for collaborations, speaking invitations, or questions about my research.
+
+*email@example.com*
+:::
+
+::: {.card-item}
+[🐙]{.card-icon}
+### GitHub
+Browse code, contribute to projects, or open an issue.
+
+[github.com/thecedarlab](https://github.com/thecedarlab)
+:::
+
+::: {.card-item}
+[🎥]{.card-icon}
+### YouTube
+Tutorials and explainers on GeoAI and ecological remote sensing.
+
+[GeoAI for Ecology](https://youtube.com/@GeoAIforEcology)
+:::
+
+:::
+
+:::

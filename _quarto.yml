@@ -1,0 +1,24 @@
+project:
+  type: website
+  output-dir: docs
+  resources:
+    - CNAME
+
+website:
+  title: "GeoAI for Ecology"
+  site-url: https://geoaiforecology.com
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - about.qmd
+    right:
+      - icon: github
+        href: https://github.com/thecedarlab
+      - icon: youtube
+        href: https://youtube.com/@GeoAIforEcology
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css

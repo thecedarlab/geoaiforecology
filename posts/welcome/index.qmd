@@ -1,0 +1,22 @@
+---
+title: "Welcome to GeoAI for Ecology"
+description: "Introducing this blog — a space for tutorials, research notes, and ideas at the intersection of geospatial AI and ecological science."
+author: "Sushil Lamsal"
+date: "2026-09-05"
+categories: [News, GeoAI]
+---
+
+Welcome to the GeoAI for Ecology blog. This is where I'll share tutorials on remote sensing and GIS in R, deep dives into machine learning methods for ecological data, research updates from CEDAR Lab, and reflections on the evolving landscape of geospatial AI.
+
+## What to Expect
+
+Posts here will cover a range of topics:
+
+- **R tutorials** — step-by-step guides using forestPulse and other geospatial packages
+- **Methods explainers** — breaking down ML and AI approaches for ecological applications
+- **Research updates** — new findings, preprints, and conference presentations
+- **Tool announcements** — releases and updates for open-source tools
+
+If you're also working at the intersection of AI and ecology, I'd love to hear from you. The best way to connect is through [GitHub](https://github.com/thecedarlab) or the [YouTube channel](https://youtube.com/@GeoAIforEcology).
+
+Stay tuned for more content coming soon.

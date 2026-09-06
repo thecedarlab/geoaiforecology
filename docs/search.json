@@ -1,0 +1,128 @@
+[
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Tutorials, research notes, and thoughts on GeoAI, remote sensing, and forest ecology.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome to GeoAI for Ecology\n\n\n\nNews\n\nGeoAI\n\n\n\nIntroducing this blog — a space for tutorials, research notes, and ideas at the intersection of geospatial AI and ecological science.\n\n\n\n\n\nSep 5, 2026\n\n\nSushil Lamsal\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "GeoAI for Ecology",
+    "section": "",
+    "text": "🌲 CEDAR Lab · Computational Ecology, Data Analytics & Remote Sensing\n\n\n\n\nBridging geospatial artificial intelligence and ecological science to understand, monitor, and protect forest landscapes.\n\n\nExplore Research forestPulse R Package YouTube Channel"
+  },
+  {
+    "objectID": "index.html#what-i-work-on",
+    "href": "index.html#what-i-work-on",
+    "title": "GeoAI for Ecology",
+    "section": "What I Work On",
+    "text": "What I Work On\nI develop computational methods that combine machine learning, remote sensing, and spatial analysis to study how forests and landscapes change over time — and what that means for biodiversity, carbon storage, and ecosystem health.\n\n\n🛰️ ### Remote Sensing & GIS Leveraging satellite imagery, LiDAR, and geospatial tools to map and monitor forests at scale — from individual tree crowns to continental patterns.\nRemote Sensing GIS\n\n\n🤖 ### GeoAI & Machine Learning Applying deep learning, computer vision, and spatial statistics to extract ecological insights from complex geospatial datasets.\nDeep Learning Spatial ML\n\n\n🌳 ### Forest & Landscape Ecology Studying how forest structure, composition, and disturbance regimes shape ecosystems across spatial and temporal scales.\nForest Ecology Landscape"
+  },
+  {
+    "objectID": "index.html#research-themes",
+    "href": "index.html#research-themes",
+    "title": "GeoAI for Ecology",
+    "section": "Research Themes",
+    "text": "Research Themes\n\nForest MonitoringSpecies & BiodiversityCarbon & ClimateOpen Tools\n\n\nDeveloping automated approaches to detect forest disturbances — including deforestation, degradation, and recovery — using time series of satellite observations. This work combines change detection algorithms with machine learning classifiers to produce timely, accurate maps of forest dynamics.\n\n\nUsing remote sensing and AI to predict species distributions, map biodiversity patterns, and understand how landscape structure influences ecological communities. Multi-sensor data fusion (optical, radar, LiDAR) enables habitat characterization at scales relevant to conservation planning.\n\n\nQuantifying forest carbon stocks and fluxes through integration of field measurements, allometric models, and remotely sensed canopy structure. These methods support national forest inventories, REDD+ monitoring, and climate change mitigation strategies.\n\n\nBuilding open-source software that makes geospatial ecology research more reproducible and accessible. The forestPulse R package is the flagship project, providing streamlined workflows for forest change analysis."
+  },
+  {
+    "objectID": "index.html#cedar-lab",
+    "href": "index.html#cedar-lab",
+    "title": "GeoAI for Ecology",
+    "section": "CEDAR Lab",
+    "text": "CEDAR Lab\n\nComputational Ecology, Data Analytics & Remote Sensing\nCEDAR Lab focuses on developing and applying geospatial AI methods to pressing questions in forest and landscape ecology. We build open-source tools, publish reproducible research, and share knowledge through tutorials and educational content.\nLearn more →\n\n\n\n🌲 Forest Ecology\n\n\n🛰️ Remote Sensing\n\n\n📦 Open Source Tools\n\n\n🎓 Tutorials & Teaching"
+  },
+  {
+    "objectID": "index.html#latest-from-the-blog",
+    "href": "index.html#latest-from-the-blog",
+    "title": "GeoAI for Ecology",
+    "section": "Latest from the Blog",
+    "text": "Latest from the Blog\nCheck out recent posts on GeoAI methods, R tutorials, and ecology research.\nVisit the Blog →"
+  },
+  {
+    "objectID": "posts/welcome/index.html",
+    "href": "posts/welcome/index.html",
+    "title": "Welcome to GeoAI for Ecology",
+    "section": "",
+    "text": "Welcome to the GeoAI for Ecology blog. This is where I’ll share tutorials on remote sensing and GIS in R, deep dives into machine learning methods for ecological data, research updates from CEDAR Lab, and reflections on the evolving landscape of geospatial AI."
+  },
+  {
+    "objectID": "posts/welcome/index.html#what-to-expect",
+    "href": "posts/welcome/index.html#what-to-expect",
+    "title": "Welcome to GeoAI for Ecology",
+    "section": "What to Expect",
+    "text": "What to Expect\nPosts here will cover a range of topics:\n\nR tutorials — step-by-step guides using forestPulse and other geospatial packages\nMethods explainers — breaking down ML and AI approaches for ecological applications\nResearch updates — new findings, preprints, and conference presentations\nTool announcements — releases and updates for open-source tools\n\nIf you’re also working at the intersection of AI and ecology, I’d love to hear from you. The best way to connect is through GitHub or the YouTube channel.\nStay tuned for more content coming soon."
+  },
+  {
+    "objectID": "research.html",
+    "href": "research.html",
+    "title": "Research",
+    "section": "",
+    "text": "My research sits at the intersection of geospatial artificial intelligence and ecology, developing computational methods to understand how forests and landscapes change and what those changes mean for the planet.\n\n\n\n\n🛰️ ### Forest Disturbance Mapping Automated detection of deforestation, degradation, and recovery using satellite time series and machine learning classifiers.\nChange Detection Landsat Sentinel\n\n\n🌍 ### Landscape Connectivity Modeling how landscape structure and fragmentation affect species movement, gene flow, and ecosystem resilience.\nConnectivity Graph Theory\n\n\n📊 ### Spatial Modeling Developing geospatial machine learning models for ecological prediction, including species distribution models and biomass estimation.\nGeoAI Prediction\n\n\n🌿 ### Biodiversity Assessment Using multi-sensor remote sensing to characterize habitats and predict biodiversity patterns across spatial scales.\nBiodiversity LiDAR\n\n\n\n\n\n\nPublications will be listed here as they become available.\n\n\nI’m always open to collaborations at the intersection of GeoAI and ecology. If you’re working on related problems, feel free to reach out."
+  },
+  {
+    "objectID": "research.html#research-areas",
+    "href": "research.html#research-areas",
+    "title": "Research",
+    "section": "",
+    "text": "🛰️ ### Forest Disturbance Mapping Automated detection of deforestation, degradation, and recovery using satellite time series and machine learning classifiers.\nChange Detection Landsat Sentinel\n\n\n🌍 ### Landscape Connectivity Modeling how landscape structure and fragmentation affect species movement, gene flow, and ecosystem resilience.\nConnectivity Graph Theory\n\n\n📊 ### Spatial Modeling Developing geospatial machine learning models for ecological prediction, including species distribution models and biomass estimation.\nGeoAI Prediction\n\n\n🌿 ### Biodiversity Assessment Using multi-sensor remote sensing to characterize habitats and predict biodiversity patterns across spatial scales.\nBiodiversity LiDAR"
+  },
+  {
+    "objectID": "research.html#publications",
+    "href": "research.html#publications",
+    "title": "Research",
+    "section": "",
+    "text": "Publications will be listed here as they become available.\n\n\nI’m always open to collaborations at the intersection of GeoAI and ecology. If you’re working on related problems, feel free to reach out."
+  },
+  {
+    "objectID": "tools.html",
+    "href": "tools.html",
+    "title": "Tools & Packages",
+    "section": "",
+    "text": "Open-source software is central to reproducible ecological research. Here are the tools I develop and maintain.\n\n\n\n\n\nforestPulse provides streamlined workflows for analyzing forest disturbance and recovery using satellite remote sensing data. It simplifies complex geospatial operations into accessible R functions.\nGitHub Repository\n\n\nOverviewInstallationQuick Start\n\n\nforestPulse is designed to make forest change analysis more accessible to ecologists and conservation practitioners. The package handles:\n\nSatellite image preprocessing and time series construction\nForest disturbance detection algorithms\nChange magnitude and timing estimation\nVisualization of forest dynamics\n\n\n\n# Install from GitHub\n# install.packages(\"devtools\")\ndevtools::install_github(\"thecedarlab/forestPulse\")\n\n\nlibrary(forestPulse)\n\n# Example workflow (placeholder)\n# Load your study area\n# Process satellite time series\n# Detect forest changes\n# Visualize results\nFull documentation and vignettes coming soon.\n\n\n\n\n\n\n\n\n\n🎥 ### GeoAI for Ecology (YouTube) Video tutorials on remote sensing, GIS, R programming, and geospatial AI methods for ecological research.\nVisit Channel\nTutorials R GIS\n\n\n💻 ### Code & Data Reproducible code and datasets accompanying publications and tutorials. All hosted on GitHub under the CEDAR Lab organization.\nBrowse Repos\nOpen Source Reproducible"
+  },
+  {
+    "objectID": "tools.html#forestpulse",
+    "href": "tools.html#forestpulse",
+    "title": "Tools & Packages",
+    "section": "",
+    "text": "forestPulse provides streamlined workflows for analyzing forest disturbance and recovery using satellite remote sensing data. It simplifies complex geospatial operations into accessible R functions.\nGitHub Repository\n\n\nOverviewInstallationQuick Start\n\n\nforestPulse is designed to make forest change analysis more accessible to ecologists and conservation practitioners. The package handles:\n\nSatellite image preprocessing and time series construction\nForest disturbance detection algorithms\nChange magnitude and timing estimation\nVisualization of forest dynamics\n\n\n\n# Install from GitHub\n# install.packages(\"devtools\")\ndevtools::install_github(\"thecedarlab/forestPulse\")\n\n\nlibrary(forestPulse)\n\n# Example workflow (placeholder)\n# Load your study area\n# Process satellite time series\n# Detect forest changes\n# Visualize results\nFull documentation and vignettes coming soon."
+  },
+  {
+    "objectID": "tools.html#other-resources",
+    "href": "tools.html#other-resources",
+    "title": "Tools & Packages",
+    "section": "",
+    "text": "🎥 ### GeoAI for Ecology (YouTube) Video tutorials on remote sensing, GIS, R programming, and geospatial AI methods for ecological research.\nVisit Channel\nTutorials R GIS\n\n\n💻 ### Code & Data Reproducible code and datasets accompanying publications and tutorials. All hosted on GitHub under the CEDAR Lab organization.\nBrowse Repos\nOpen Source Reproducible"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "Sushil Lamsal\n\n\n\n\nPhD Researcher · CEDAR Lab\nI’m a researcher working at the intersection of geospatial artificial intelligence and ecology. My work combines machine learning, remote sensing, and spatial analysis to study forest and landscape dynamics — understanding how ecosystems change and what we can do about it.\nI founded CEDAR Lab (Computational Ecology, Data Analytics & Remote Sensing) to advance open, reproducible research in geospatial ecology, and I run the GeoAI for Ecology YouTube channel to make these methods accessible to a wider audience.\n\n\n\n\n\nMy research draws on forest ecology, landscape ecology, geospatial data science, and AI. I’m particularly interested in how we can use freely available satellite data and modern machine learning to answer ecological questions that matter for conservation and land management.\nI believe in open science — the tools we build, the code we write, and the knowledge we generate should be accessible to everyone.\n\n\n\n\n\n\n📧 ### Email Get in touch for collaborations, speaking invitations, or questions about my research.\nemail@example.com\n\n\n🐙 ### GitHub Browse code, contribute to projects, or open an issue.\ngithub.com/thecedarlab\n\n\n🎥 ### YouTube Tutorials and explainers on GeoAI and ecological remote sensing.\nGeoAI for Ecology"
+  },
+  {
+    "objectID": "about.html#sushil-lamsal",
+    "href": "about.html#sushil-lamsal",
+    "title": "About",
+    "section": "",
+    "text": "PhD Researcher · CEDAR Lab\nI’m a researcher working at the intersection of geospatial artificial intelligence and ecology. My work combines machine learning, remote sensing, and spatial analysis to study forest and landscape dynamics — understanding how ecosystems change and what we can do about it.\nI founded CEDAR Lab (Computational Ecology, Data Analytics & Remote Sensing) to advance open, reproducible research in geospatial ecology, and I run the GeoAI for Ecology YouTube channel to make these methods accessible to a wider audience."
+  },
+  {
+    "objectID": "about.html#background",
+    "href": "about.html#background",
+    "title": "About",
+    "section": "",
+    "text": "My research draws on forest ecology, landscape ecology, geospatial data science, and AI. I’m particularly interested in how we can use freely available satellite data and modern machine learning to answer ecological questions that matter for conservation and land management.\nI believe in open science — the tools we build, the code we write, and the knowledge we generate should be accessible to everyone."
+  },
+  {
+    "objectID": "about.html#connect",
+    "href": "about.html#connect",
+    "title": "About",
+    "section": "",
+    "text": "📧 ### Email Get in touch for collaborations, speaking invitations, or questions about my research.\nemail@example.com\n\n\n🐙 ### GitHub Browse code, contribute to projects, or open an issue.\ngithub.com/thecedarlab\n\n\n🎥 ### YouTube Tutorials and explainers on GeoAI and ecological remote sensing.\nGeoAI for Ecology"
+  }
+]

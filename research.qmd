@@ -1,0 +1,59 @@
+---
+title: "Research"
+toc: true
+---
+
+::: {.content}
+
+My research sits at the intersection of geospatial artificial intelligence and ecology, developing computational methods to understand how forests and landscapes change and what those changes mean for the planet.
+
+## Research Areas
+
+::: {.card-grid}
+
+::: {.card-item}
+[🛰️]{.card-icon}
+### Forest Disturbance Mapping
+Automated detection of deforestation, degradation, and recovery using satellite time series and machine learning classifiers.
+
+[Change Detection]{.card-tag} [Landsat]{.card-tag} [Sentinel]{.card-tag}
+:::
+
+::: {.card-item}
+[🌍]{.card-icon}
+### Landscape Connectivity
+Modeling how landscape structure and fragmentation affect species movement, gene flow, and ecosystem resilience.
+
+[Connectivity]{.card-tag} [Graph Theory]{.card-tag}
+:::
+
+::: {.card-item}
+[📊]{.card-icon}
+### Spatial Modeling
+Developing geospatial machine learning models for ecological prediction, including species distribution models and biomass estimation.
+
+[GeoAI]{.card-tag} [Prediction]{.card-tag}
+:::
+
+::: {.card-item}
+[🌿]{.card-icon}
+### Biodiversity Assessment
+Using multi-sensor remote sensing to characterize habitats and predict biodiversity patterns across spatial scales.
+
+[Biodiversity]{.card-tag} [LiDAR]{.card-tag}
+:::
+
+:::
+
+---
+
+## Publications
+
+*Publications will be listed here as they become available.*
+
+::: {.highlight-box}
+### Interested in Collaboration?
+I'm always open to collaborations at the intersection of GeoAI and ecology. If you're working on related problems, feel free to reach out.
+:::
+
+:::
