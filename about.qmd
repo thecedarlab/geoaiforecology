@@ -9,9 +9,7 @@ toc: false
 
 ::: {.profile-section}
 
-<!-- SETUP: replace images/profile-placeholder.svg with a real headshot
-     (e.g. images/sushil-paudel.jpg, roughly square, 600×600 or larger). -->
-![](images/profile-placeholder.svg){.profile-photo fig-alt="Portrait of Sushil Paudel"}
+![](images/sushil-paudel.jpg){.profile-photo fig-alt="Portrait of Sushil Paudel"}
 
 ::: {.profile-info}
 

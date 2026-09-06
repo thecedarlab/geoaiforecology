@@ -81,7 +81,7 @@ Methods are explained publicly through written tutorials and the [GeoAI for Ecol
 
 ::: {.profile-section}
 
-![](images/profile-placeholder.svg){.profile-photo fig-alt="Portrait of Sushil Paudel"}
+![](images/sushil-paudel.jpg){.profile-photo fig-alt="Portrait of Sushil Paudel"}
 
 ::: {.profile-info}
 
