@@ -1,6 +1,6 @@
 ---
 title: "GeoAI for Ecology"
-pagetitle: "GeoAI for Ecology — Sushil Lamsal"
+pagetitle: "GeoAI for Ecology — Sushil Paudel"
 toc: false
 page-layout: full
 ---
@@ -20,7 +20,7 @@ Bridging geospatial artificial intelligence and ecological science to understand
 ::: {.cta-group}
 [Explore Research](research.qmd){.cta-btn .cta-primary}
 [forestPulse R Package](tools.qmd){.cta-btn .cta-secondary}
-[YouTube Channel](https://youtube.com/@GeoAIforEcology){.cta-btn .cta-secondary}
+[YouTube Channel](https://www.youtube.com/@geoai4ecology){.cta-btn .cta-secondary}
 :::
 
 :::
