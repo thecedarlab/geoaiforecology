@@ -6,19 +6,39 @@ project:
 
 website:
   title: "GeoAI for Ecology"
+  favicon: "images/favicon.png"
   site-url: https://geoaiforecology.com
   navbar:
+    background: "#1a2f23"
+    foreground: "#e8efe6"
     left:
       - href: index.qmd
         text: Home
-      - about.qmd
+      - href: research.qmd
+        text: Research
+      - href: tools.qmd
+        text: Tools & Packages
+      - href: blog.qmd
+        text: Blog
+      - href: about.qmd
+        text: About
     right:
       - icon: github
         href: https://github.com/thecedarlab
+        aria-label: GitHub
       - icon: youtube
-        href: https://youtube.com/@GeoAIforEcology
+        href: https://www.youtube.com/@geoai4ecology
+        aria-label: YouTube
+  page-footer:
+    center: "© 2024–2026 CEDAR Lab · Built with [Quarto](https://quarto.org)"
+    background: "#1a2f23"
+    foreground: "#a3b8a0"
 
 format:
   html:
-    theme: cosmo
+    theme:
+      light: cosmo
     css: styles.css
+    toc: true
+    code-copy: true
+    code-overflow: wrap

@@ -19,7 +19,7 @@ Bridging geospatial artificial intelligence and ecological science to understand
 
 ::: {.cta-group}
 [Explore Research](research.qmd){.cta-btn .cta-primary}
-[forestPulse R Package](tools.qmd){.cta-btn .cta-secondary}
+[Tools & Packages](tools.qmd){.cta-btn .cta-secondary}
 [YouTube Channel](https://www.youtube.com/@geoai4ecology){.cta-btn .cta-secondary}
 :::
 
@@ -79,7 +79,7 @@ Quantifying forest carbon stocks and fluxes through integration of field measure
 
 ### Open Tools
 
-Building open-source software that makes geospatial ecology research more reproducible and accessible. The forestPulse R package is the flagship project, providing streamlined workflows for forest change analysis.
+Building open-source software that makes geospatial ecology research more reproducible and accessible. Current projects include **forestPulse**, an R package for forest change analysis, and **iLAND Workbench**, a QGIS plugin for individual-based forest landscape and disturbance modeling with full data-preparation workflows, runtime management, and reproducible analysis pipelines.
 
 :::
 

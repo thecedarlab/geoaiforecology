@@ -7,7 +7,7 @@ toc: false
 
 ::: {.profile-section}
 
-![Sushil Lamsal](images/profile-placeholder.svg){.profile-photo fig-alt="Sushil Lamsal"}
+![Sushil Paudel](images/profile-placeholder.svg){.profile-photo fig-alt="Sushil Paudel"}
 
 ::: {.profile-info}
 
@@ -58,7 +58,7 @@ Browse code, contribute to projects, or open an issue.
 ### YouTube
 Tutorials and explainers on GeoAI and ecological remote sensing.
 
-[GeoAI for Ecology](https://youtube.com/@GeoAIforEcology)
+[GeoAI for Ecology](https://www.youtube.com/@geoai4ecology)
 :::
 
 :::

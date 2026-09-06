@@ -9,6 +9,64 @@ Open-source software is central to reproducible ecological research. Here are th
 
 ---
 
+## iLAND Workbench
+
+::: {.highlight-box}
+### 🌲 iLAND Workbench — A QGIS Plugin for Forest Landscape Modeling
+
+A dockable QGIS plugin that brings the iLAND individual-based forest landscape and disturbance model into a GIS workflow. It provides runtime management, module exploration, data-preparation pipelines for climate, soil, and stand-grid inputs, and reproducible analysis workflows — all from within QGIS.
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19300115.svg)](https://doi.org/10.5281/zenodo.19300115)
+
+[GitHub Repository](https://github.com/paudelsushil/iLAND-QGIS-plugin){.cta-btn .cta-primary style="margin-top: 1rem; font-size: 0.9rem; padding: 0.5rem 1.2rem;"}
+[QGIS Plugin Repository](https://plugins.qgis.org/search/?q=iland+workbench){.cta-btn .cta-secondary style="margin-top: 1rem; font-size: 0.9rem; padding: 0.5rem 1.2rem;"}
+:::
+
+::: {.panel-tabset}
+
+### Overview
+
+iLAND Workbench bridges the gap between the iLAND simulation model and the QGIS ecosystem, making forest landscape modeling accessible without leaving your GIS environment. Key capabilities include:
+
+- Runtime management with automatic download and verification of iLANDc across Windows, macOS, and Linux
+- Module and submodule exploration directly from the iLAND source tree
+- Complete climate workflows: future climate download, historical data, and conversion/validation pipelines
+- Soil data acquisition from SSURGO and SoilGrids
+- Stand-grid source workflows via LANDFIRE EVT and ESA WorldCover
+- Landscape pre-flight validation before model creation
+- Interactive SQLite plot browser for inspecting exported iLand output databases
+- Full QGIS Processing provider integration
+
+### Installation
+
+```bash
+# Requires QGIS Desktop 3.28 or newer
+# In QGIS: Plugins → Manage and Install Plugins → Install from ZIP
+# Download iland_qgis_plugin.zip from the GitHub Releases page
+```
+
+The plugin ships as a small, runtime-free package. The native iLAND console runtime (iLANDc) needed to run simulations is acquired automatically on first use.
+
+### Citation
+
+```bibtex
+@software{paudel2026iland,
+  author    = {Paudel, Sushil},
+  title     = {{iLAND Workbench: QGIS-based iLAND Workbench for
+                hassle-free installation and reproducible analysis
+                workflows}},
+  year      = {2026},
+  version   = {4.1.0},
+  publisher = {Zenodo},
+  doi       = {10.5281/zenodo.19300115},
+  url       = {https://doi.org/10.5281/zenodo.19300115}
+}
+```
+
+:::
+
+---
+
 ## forestPulse
 
 ::: {.highlight-box}
@@ -65,7 +123,7 @@ library(forestPulse)
 ### GeoAI for Ecology (YouTube)
 Video tutorials on remote sensing, GIS, R programming, and geospatial AI methods for ecological research.
 
-[Visit Channel](https://youtube.com/@GeoAIforEcology)
+[Visit Channel](https://www.youtube.com/@geoai4ecology)
 
 [Tutorials]{.card-tag} [R]{.card-tag} [GIS]{.card-tag}
 :::
