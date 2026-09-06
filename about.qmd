@@ -11,7 +11,7 @@ toc: false
 
 ::: {.profile-info}
 
-## Sushil Lamsal
+## Sushil Paudel
 
 **PhD Researcher · CEDAR Lab**
 
