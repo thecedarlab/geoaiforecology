@@ -6,7 +6,7 @@ project:
 
 website:
   title: "GeoAI for Ecology"
-  description: "Geospatial artificial intelligence, remote sensing, and open-source tools for understanding forest and landscape change — research and tutorials from CEDAR Lab."
+  description: "Geospatial artificial intelligence, remote sensing, and open-source tools for understanding forest and landscape change — research and tutorials from The CEDAR Lab."
   favicon: "images/favicon.png"
   site-url: https://geoaiforecology.com
   repo-url: https://github.com/thecedarlab
@@ -23,6 +23,8 @@ website:
     left:
       - href: index.qmd
         text: Home
+      - href: lab.qmd
+        text: Lab
       - href: research.qmd
         text: Research
       - href: tools.qmd
@@ -47,9 +49,11 @@ website:
     background: "#1a2f23"
     foreground: "#a3b8a0"
     left: |
-      **CEDAR Lab** — Computational Ecology, Data Analytics & Remote Sensing
+      **The CEDAR Lab** — Computational Ecology, Data Analytics & Remote Sensing
       © 2024–2026 · Built with [Quarto](https://quarto.org)
     center:
+      - text: "Lab"
+        href: lab.qmd
       - text: "Research"
         href: research.qmd
       - text: "Tools"

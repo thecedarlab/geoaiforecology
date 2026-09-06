@@ -1,7 +1,7 @@
 ---
 title: "About"
 pagetitle: "About — Sushil Paudel | GeoAI for Ecology"
-description: "Sushil Paudel is a PhD researcher working at the intersection of geospatial AI, remote sensing, and forest ecology, and the founder of CEDAR Lab."
+description: "Sushil Paudel is a PhD researcher working at the intersection of geospatial AI, remote sensing, and forest ecology, and the founder of The CEDAR Lab."
 toc: false
 ---
 
@@ -17,11 +17,11 @@ toc: false
 
 ## Sushil Paudel
 
-**PhD Researcher · Founder, CEDAR Lab**
+**PhD Researcher · Founder, The CEDAR Lab**
 
 I'm a researcher working at the intersection of geospatial artificial intelligence and ecology. My work combines machine learning, remote sensing, and spatial analysis to study forest and landscape dynamics — understanding how ecosystems change and what we can do about it.
 
-I founded **CEDAR Lab** (Computational Ecology, Data Analytics & Remote Sensing) to advance open, reproducible research in geospatial ecology, and I run the **GeoAI for Ecology** YouTube channel to make these methods accessible to a wider audience.
+I founded **[The CEDAR Lab](lab.qmd)** (Computational Ecology, Data Analytics & Remote Sensing) to advance open, reproducible research in geospatial ecology, and I run the **GeoAI for Ecology** YouTube channel to make these methods accessible to a wider audience.
 
 ::: {.profile-links}
 [🐙 GitHub](https://github.com/thecedarlab)
@@ -128,7 +128,7 @@ Prefer somewhere else? You can also open an issue on [GitHub](https://github.com
 [🐙]{.card-icon}
 
 ### GitHub
-Source code for CEDAR Lab projects, plus the [iLAND Workbench plugin](https://github.com/paudelsushil/iLAND-QGIS-plugin) under my personal account.
+Source code for The CEDAR Lab projects, plus the [iLAND Workbench plugin](https://github.com/paudelsushil/iLAND-QGIS-plugin) under my personal account.
 
 [github.com/thecedarlab](https://github.com/thecedarlab)
 

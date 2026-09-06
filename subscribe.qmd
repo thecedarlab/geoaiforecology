@@ -1,7 +1,7 @@
 ---
 title: "Subscribe"
 pagetitle: "Subscribe — GeoAI for Ecology"
-description: "Get new tutorials, tool releases, and research notes from CEDAR Lab delivered by email or RSS."
+description: "Get new tutorials, tool releases, and research notes from The CEDAR Lab delivered by email or RSS."
 toc: false
 ---
 
@@ -73,7 +73,7 @@ Video tutorials on remote sensing, GIS, R, and geospatial AI. Subscribe there fo
 [🐙]{.card-icon}
 
 ### GitHub
-Watch the CEDAR Lab organization to get notified about new releases and repositories.
+Watch The CEDAR Lab organization to get notified about new releases and repositories.
 
 [github.com/thecedarlab](https://github.com/thecedarlab)
 
@@ -92,7 +92,7 @@ Watch the CEDAR Lab organization to get notified about new releases and reposito
 - **R & Python tutorials** — hands-on geospatial workflows you can run yourself
 - **Methods explainers** — how ML and AI approaches actually work on ecological data
 - **Tool releases** — new versions of iLAND Workbench, forestPulse, and other packages
-- **Research updates** — preprints, publications, and conference talks from CEDAR Lab
+- **Research updates** — preprints, publications, and conference talks from The CEDAR Lab
 :::
 
 :::

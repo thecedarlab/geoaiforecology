@@ -1,0 +1,225 @@
+---
+title: "The CEDAR Lab"
+pagetitle: "The CEDAR Lab — Computational Ecology, Data Analytics & Remote Sensing"
+description: "The CEDAR Lab develops geospatial AI, remote sensing, and open-source tools for forest and landscape ecology."
+toc: true
+---
+
+::: {.content}
+
+::: {.highlight-box}
+### 🌲 Computational Ecology, Data Analytics & Remote Sensing
+
+The CEDAR Lab builds computational methods and open-source software for understanding how forests and landscapes change — combining machine learning, satellite remote sensing, and spatial analysis to answer questions that matter for conservation, carbon, and biodiversity.
+
+[The CEDAR Lab on GitHub](https://github.com/thecedarlab){.cta-btn .cta-primary style="margin-top: 1rem; font-size: 0.9rem; padding: 0.5rem 1.2rem;"}
+[Our research](research.qmd){.cta-btn .cta-secondary style="margin-top: 1rem; font-size: 0.9rem; padding: 0.5rem 1.2rem;"}
+:::
+
+## What CEDAR stands for
+
+**C**omputational **E**cology, **D**ata **A**nalytics, and **R**emote sensing — the three strands that run through everything the lab does.
+
+::: {.card-grid}
+
+::: {.card-item}
+[🧮]{.card-icon}
+
+### Computational Ecology
+Turning ecological questions into models that can be run, tested, and re-run. Simulation of forest dynamics and disturbance sits alongside statistical inference from field and satellite observation.
+
+[Modeling]{.card-tag} [Simulation]{.card-tag}
+:::
+
+::: {.card-item}
+[📊]{.card-icon}
+
+### Data Analytics
+Machine learning and spatial statistics applied to large, messy environmental datasets — with an emphasis on validation that holds up when a model meets a landscape it has never seen.
+
+[Machine Learning]{.card-tag} [Spatial Stats]{.card-tag}
+:::
+
+::: {.card-item}
+[🛰️]{.card-icon}
+
+### Remote Sensing
+Openly licensed Earth observation — Landsat, Sentinel, LiDAR, radar — used to measure forest structure, composition, and change from the individual crown to the continental scale.
+
+[Earth Observation]{.card-tag} [LiDAR]{.card-tag}
+:::
+
+:::
+
+---
+
+## How we work
+
+::: {.panel-tabset}
+
+### Open by default
+
+Code, methods, and — where licensing allows — data are released publicly. Software is archived on Zenodo so it carries a citable DOI, and analyses are built as reproducible pipelines rather than one-off scripts that only run on one machine.
+
+### Free and open data
+
+The lab deliberately builds on openly licensed Earth observation and environmental data: Landsat, Sentinel, SoilGrids, LANDFIRE, and ESA WorldCover. Methods that depend on commercial imagery budgets are methods most of the world cannot use.
+
+### Tools, not just papers
+
+Research outputs are packaged so other people can actually run them — QGIS plugins, R packages, documented workflows. A result that stops at a figure in a paper is only half finished.
+
+### Teaching in the open
+
+Methods are explained publicly through written tutorials and the [GeoAI for Ecology](https://www.youtube.com/@geoai4ecology) YouTube channel, so that researchers without a computational background can pick these tools up.
+
+:::
+
+---
+
+## People
+
+::: {.profile-section}
+
+![](images/profile-placeholder.svg){.profile-photo fig-alt="Portrait of Sushil Paudel"}
+
+::: {.profile-info}
+
+### Sushil Paudel
+
+**Founder · PhD Researcher**
+
+Sushil founded The CEDAR Lab to advance open, reproducible research in geospatial ecology. His work combines machine learning, remote sensing, and spatial analysis to study forest and landscape dynamics, and he develops the lab's open-source tools.
+
+::: {.profile-links}
+[👤 Full profile](about.qmd)
+[🐙 GitHub](https://github.com/paudelsushil)
+[🎥 YouTube](https://www.youtube.com/@geoai4ecology)
+:::
+
+:::
+
+:::
+
+::: {.highlight-box}
+### Join the lab
+
+The CEDAR Lab is early in its life, and I'm interested in hearing from students, researchers, and practitioners working at the intersection of geospatial AI and ecology — whether that's a joint analysis, method development, or applying the lab's tools to your own study system.
+
+[Get in touch →](about.qmd#get-in-touch)
+:::
+
+---
+
+## Software
+
+The lab's software is developed in the open. Everything is free to use, inspect, and build on.
+
+::: {.card-grid .two-col}
+
+::: {.card-item}
+[🌲]{.card-icon}
+
+### iLAND Workbench
+A QGIS plugin bringing the iLAND individual-based forest landscape and disturbance model into a GIS workflow — runtime management, climate and soil data pipelines, and reproducible analysis. Archived on Zenodo with a citable DOI.
+
+[Documentation](tools.qmd#iland-workbench) · [Source](https://github.com/paudelsushil/iLAND-QGIS-plugin)
+
+[QGIS Plugin]{.card-tag} [Python]{.card-tag} [Released]{.card-tag}
+:::
+
+::: {.card-item}
+[📦]{.card-icon}
+
+### forestPulse
+An R package for forest disturbance and recovery analysis from satellite time series — preprocessing, change detection, and visualization. Currently in development; the repository goes public at the first tagged release.
+
+[Documentation](tools.qmd#forestpulse) · [Lab GitHub](https://github.com/thecedarlab)
+
+[R Package]{.card-tag} [In Development]{.card-tag}
+:::
+
+:::
+
+[See all tools & packages →](tools.qmd)
+
+---
+
+## Research themes
+
+The lab's active work spans four connected areas. Each is described in more detail on the [research page](research.qmd).
+
+::: {.card-grid .two-col}
+
+::: {.card-item}
+[🛰️]{.card-icon}
+
+### Forest disturbance mapping
+Detecting deforestation, degradation, and recovery from satellite time series, separating gradual change from abrupt clearing.
+:::
+
+::: {.card-item}
+[🌍]{.card-icon}
+
+### Landscape connectivity
+Modeling how fragmentation shapes species movement, gene flow, and ecosystem resilience.
+:::
+
+::: {.card-item}
+[📈]{.card-icon}
+
+### Spatial modeling
+Species distribution and biomass models built with spatially aware validation.
+:::
+
+::: {.card-item}
+[🌿]{.card-icon}
+
+### Biodiversity assessment
+Multi-sensor habitat characterization across scales, fusing optical, radar, and LiDAR data.
+:::
+
+:::
+
+---
+
+## Follow the lab
+
+::: {.card-grid}
+
+::: {.card-item}
+[🐙]{.card-icon}
+
+### GitHub
+Source code, releases, and issue trackers for all lab software.
+
+[github.com/thecedarlab](https://github.com/thecedarlab)
+
+[Open Source]{.card-tag}
+:::
+
+::: {.card-item}
+[🎥]{.card-icon}
+
+### YouTube
+Tutorials and explainers on remote sensing, GIS, R, and geospatial AI.
+
+[GeoAI for Ecology](https://www.youtube.com/@geoai4ecology)
+
+[Tutorials]{.card-tag}
+:::
+
+::: {.card-item}
+[✉️]{.card-icon}
+
+### Newsletter
+Research updates, tool releases, and new tutorials by email or RSS.
+
+[Subscribe →](subscribe.qmd)
+
+[Email]{.card-tag} [RSS]{.card-tag}
+:::
+
+:::
+
+:::

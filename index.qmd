@@ -24,7 +24,7 @@ listing:
 ::: {.hero-banner}
 
 ::: {.hero-badge}
-🌲 CEDAR Lab · Computational Ecology, Data Analytics & Remote Sensing
+🌲 The CEDAR Lab · Computational Ecology, Data Analytics & Remote Sensing
 :::
 
 # GeoAI for Ecology
@@ -158,14 +158,14 @@ An R package providing streamlined workflows for forest disturbance and recovery
 
 ---
 
-## CEDAR Lab
+## The CEDAR Lab
 
 ::: {.highlight-box}
 ### Computational Ecology, Data Analytics & Remote Sensing
 
-CEDAR Lab focuses on developing and applying geospatial AI methods to pressing questions in forest and landscape ecology. We build open-source tools, publish reproducible research, and share knowledge through tutorials and educational content.
+The CEDAR Lab focuses on developing and applying geospatial AI methods to pressing questions in forest and landscape ecology. We build open-source tools, publish reproducible research, and share knowledge through tutorials and educational content.
 
-[Learn more →](about.qmd)
+[About the lab →](lab.qmd)
 :::
 
 ---

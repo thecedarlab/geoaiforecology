@@ -283,9 +283,11 @@ a:hover {
 
 /* ── Project / Feature cards ─────────────────────────────────── */
 
+/* 240px lets three cards sit side by side in the narrower content column
+   used by the inner pages, instead of orphaning the third onto its own row. */
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 1.5rem;
   margin: 2rem 0;
 }
@@ -389,6 +391,29 @@ a:hover {
   color: var(--heading);
   margin-top: 0;
   margin-bottom: 0.4rem;
+}
+
+/* The hero CTA variants are tuned for a dark background; inside a light
+   panel they wash out, so restate them with panel-appropriate contrast. */
+.highlight-box .cta-primary {
+  background: var(--forest-mid);
+  color: #fff;
+}
+
+.highlight-box .cta-primary:hover {
+  background: var(--canopy);
+  color: #fff;
+}
+
+.highlight-box .cta-secondary {
+  background: transparent;
+  color: var(--accent);
+  border: 1px solid var(--border-strong);
+}
+
+.highlight-box .cta-secondary:hover {
+  color: var(--canopy);
+  border-color: var(--canopy);
 }
 
 /* ── Publications ────────────────────────────────────────────── */

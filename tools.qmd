@@ -75,7 +75,9 @@ The plugin ships as a small, runtime-free package. The native iLAND console runt
 
 forestPulse provides streamlined workflows for analyzing forest disturbance and recovery using satellite remote sensing data. It simplifies complex geospatial operations into accessible R functions.
 
-[GitHub Repository](https://github.com/thecedarlab/forestPulse){.cta-btn .cta-primary style="margin-top: 1rem; font-size: 0.9rem; padding: 0.5rem 1.2rem;"}
+**Status: in development.** The repository becomes public at the first tagged release — follow [The CEDAR Lab on GitHub](https://github.com/thecedarlab) to be notified.
+
+[The CEDAR Lab on GitHub](https://github.com/thecedarlab){.cta-btn .cta-primary style="margin-top: 1rem; font-size: 0.9rem; padding: 0.5rem 1.2rem;"}
 :::
 
 ::: {.panel-tabset}
@@ -91,8 +93,9 @@ forestPulse is designed to make forest change analysis more accessible to ecolog
 
 ### Installation
 
+Once the first release is published, forestPulse will install straight from GitHub:
+
 ```r
-# Install from GitHub
 # install.packages("devtools")
 devtools::install_github("thecedarlab/forestPulse")
 ```
@@ -109,9 +112,9 @@ forestPulse is under active development. The current state of the package:
 | Visualization helpers | Planned |
 | Vignettes & reference docs | Planned |
 
-The most accurate picture of what works today is the repository itself — issues and pull requests are welcome.
+The repository is published at the first tagged release. Watch the lab's GitHub organization to be notified when it lands.
 
-[Follow development on GitHub](https://github.com/thecedarlab/forestPulse){.cta-btn .cta-solid style="font-size:0.88rem; padding:0.45rem 1.1rem;"}
+[Watch The CEDAR Lab on GitHub](https://github.com/thecedarlab){.cta-btn .cta-solid style="font-size:0.88rem; padding:0.45rem 1.1rem;"}
 
 :::
 
@@ -136,7 +139,7 @@ Video tutorials on remote sensing, GIS, R programming, and geospatial AI methods
 [💻]{.card-icon}
 
 ### Code & Data
-Reproducible code and datasets accompanying publications and tutorials. All hosted on GitHub under the CEDAR Lab organization.
+Reproducible code and datasets accompanying publications and tutorials. All hosted on GitHub under The CEDAR Lab organization.
 
 [Browse Repos](https://github.com/thecedarlab)
 

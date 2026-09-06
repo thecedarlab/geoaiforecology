@@ -111,7 +111,7 @@ Peer-reviewed articles will be listed here as they appear. In the meantime, the 
 
 ## Data & Code Availability
 
-Analysis code and, where licensing permits, derived datasets accompanying this research are published under the [CEDAR Lab GitHub organization](https://github.com/thecedarlab). Software releases are archived on Zenodo so they can be cited with a persistent DOI.
+Analysis code and, where licensing permits, derived datasets accompanying this research are published under the [The CEDAR Lab GitHub organization](https://github.com/thecedarlab). Software releases are archived on Zenodo so they can be cited with a persistent DOI.
 
 ::: {.highlight-box}
 ### Interested in Collaboration?
